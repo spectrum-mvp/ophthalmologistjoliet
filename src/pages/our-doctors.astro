@@ -1,0 +1,257 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Our Doctors | Spectrum Eye Institute" viewportFit={true}>
+<Fragment slot="head">
+<link rel="stylesheet" href={withBase('styles/doctors.css')} />
+<meta name="description" content="Meet the ophthalmologists and eye care specialists at Spectrum Eye Institute in New Lenox and Joliet, IL." />
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+</Fragment>
+<main id="main" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Our doctors</h1>
+      <p class="section-note">Our team has a combination of over 100 years of experience caring for patients across Will, Grundy and Cook Counties.</p>
+    </div>
+    <div class="doc-grid">
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/lelis.jpg")} alt="Eligius Lelis, MD" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Eligius Lelis, MD</h2>
+          <p class="doc-role">Managing Partner &middot; Ophthalmology</p>
+          <p class="doc-blurb">LASIK and cataract surgery. Practicing in Will, Grundy and Cook Counties since 1990.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-lelis">View Full Bio<span class="visually-hidden"> for Eligius Lelis, MD</span></button>
+        </div>
+      </article>
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/rassouli.jpg")} alt="Majid Rassouli, DO" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Majid Rassouli, DO</h2>
+          <p class="doc-role">Partner &middot; Ophthalmology</p>
+          <p class="doc-blurb">Specializing in cataract surgery and cornea transplants.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-rassouli">View Full Bio<span class="visually-hidden"> for Majid Rassouli, DO</span></button>
+        </div>
+      </article>
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/hashmi.jpg")} alt="Samra Hashmi, MD" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Samra Hashmi, MD</h2>
+          <p class="doc-role">Partner &middot; Ophthalmology</p>
+          <p class="doc-blurb">Intraocular lens implants, corneal transplants and laser vision correction.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-hashmi">View Full Bio<span class="visually-hidden"> for Samra Hashmi, MD</span></button>
+        </div>
+      </article>
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/desai.jpg")} alt="Ankit Desai, MD" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Ankit Desai, MD</h2>
+          <p class="doc-role">Retina Specialist &middot; Ophthalmology</p>
+          <p class="doc-blurb">Medical and surgical treatment of vitreoretinal and macular diseases.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-desai">View Full Bio<span class="visually-hidden"> for Ankit Desai, MD</span></button>
+        </div>
+      </article>
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/cullen-regan.jpg")} alt="Dr. Cullen-Regan" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Dr. Cullen-Regan</h2>
+          <p class="doc-role">Optometrist &middot; Optometry</p>
+          <p class="doc-blurb">Children&rsquo;s and family vision, laser vision correction and dry eye.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-cullen-regan">View Full Bio<span class="visually-hidden"> for Dr. Cullen-Regan</span></button>
+        </div>
+      </article>
+      <article class="doc-card">
+        <img class="doc-photo" src={withBase("assets/doctors/patel.jpg")} alt="Priya Patel, OD" width="600" height="600" loading="lazy" decoding="async">
+        <div class="doc-body">
+          <h2 class="doc-name">Priya Patel, OD</h2>
+          <p class="doc-role">Optometrist &middot; Optometry</p>
+          <p class="doc-blurb">Comprehensive and diabetic eye exams, contact lenses and ocular disease.</p>
+          <button class="btn btn-outline doc-open" type="button" data-bio="bio-patel">View Full Bio<span class="visually-hidden"> for Priya Patel, OD</span></button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <dialog class="doc-modal" id="bio-lelis" aria-labelledby="bio-lelis-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/lelis.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-lelis-title">Eligius Lelis, MD</h3>
+          <p class="doc-role">Managing Partner &middot; Ophthalmology</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p>Eligius Lelis, MD, the managing partner of Spectrum Eye Institute, has practiced ophthalmology in Will, Grundy and Cook Counties since 1990. Dr. Lelis attended medical school at the Case Western Reserve School of Medicine in Cleveland, Ohio, after receiving his Bachelor of Science degree from Wayne State University in Detroit, Michigan. His postgraduate training included an internship at the Cleveland Clinic in Cleveland, Ohio. His residency was completed at the Loyola University of Chicago.</p>
+        <p>Dr. Lelis is board certified by the American Board of Ophthalmology. He is also a member of the American Academy of Ophthalmology, Illinois Association of Ophthalmology and the Illinois Society for the Prevention of Blindness. Dr. Lelis has performed over 20,000 surgeries in his career to date. He regularly performs LASIK surgery for the correction of nearsightedness, farsightedness and astigmatism. He also performs cataract surgery with premium Multifocal inplants (TECNIS&reg;, Toric, ReSTOR&reg;) using the most current no stitch-no patch method.</p>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="doc-modal" id="bio-rassouli" aria-labelledby="bio-rassouli-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/rassouli.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-rassouli-title">Majid Rassouli, DO</h3>
+          <p class="doc-role">Partner &middot; Ophthalmology</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p>Dr. Rassouli, a partner of Spectrum Eye Institute, attended Michigan State university College of Osteopathic Medicine from 1994 - 1998. He received his Bachelor of Science (Microbiology) in 1991, from the University of Washington. His Postgraduate training included an internship at Henry Ford hospital/Bi-County Community Hospital in Michigan. Dr. Rassouli completed his residency at Chicago College of Osteopathic Medicine/ Midwestern University from 1999 - 2002. He completed his Cornea and Refractive Surgery Fellowship in 2003 at the University of Illinois, Chicago. Dr. Rassouli performs cataract surgery with premuim multifocal implants (TECNIS&reg;, Toric, ReSTOR&reg;) using the most current no stitch-no patch method.</p>
+        <p>Dr. Rassouli is Board Certified by the American Academy of Ophthalmology. He is also affiliated with the following professional organizations.</p>
+        <h4 class="doc-sub">Professional organizations</h4>
+        <ul class="doc-list">
+          <li>American Academy of Ophthalmology</li>
+          <li>American Society of Cataract and Refractive Surgeons</li>
+          <li>American Osteopathic Association</li>
+          <li>American Osteopathic College of Ophthalmology, Otolaryngology/Head and Neck Surgeons</li>
+        </ul>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="doc-modal" id="bio-hashmi" aria-labelledby="bio-hashmi-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/hashmi.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-hashmi-title">Samra Hashmi, MD</h3>
+          <p class="doc-role">Partner &middot; Ophthalmology</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p>Dr. Samra Hashmi, a partner of Spectrum Eye Institute, specializes in intraocular lens implant surgery, corneal transplant surgery and refractive or laser vision corrective surgery for nearsightedness, farsightedness and astigmatism. Board certified ophthalmologist and member of the American Board of Ophthalmology, Dr. Hashmi earned her medical degree at the premier medical institute in Pakistan, The Aga Khan University, in 1994.</p>
+        <p>Her Postgraduate training included a research fellowship in the Hypertension section, Department of Cardiology, Mount Sinai Medical Center, New York and a Research fellowship in Cornea and External Diseases at the New York Eye and Ear Infirmary in New York City. Samra Hashmi, MD completed her residency in Ophthalmology at the Medical College of Georgia 1998 - 2001. She completed her Fellowship in Refractive Surgery, Cornea in 2003 at the Cole Eye Institute, Cleveland Clinic Foundation. Dr. Hashmi performs cataract surgery with premium multifocal inplants (TECNIS&reg;, Toric, ReSTOR&reg;) using the current no-stitch, no-patch technique.</p>
+        <p>Samra Hashmi, MD is affiliated with the following professional organizations.</p>
+        <h4 class="doc-sub">Professional organizations</h4>
+        <ul class="doc-list">
+          <li>American Society of Cataract and Refractive Surgeons</li>
+          <li>American Academy of Ophthalmology</li>
+          <li>Association for Research in Vision and Ophthalmology</li>
+          <li>American Society for Hypertension</li>
+        </ul>
+        <p>Dr. Hashmi has been active in ophthalmic research and participated in various FDA clinical trials. Her work has been published in professional peer-reviewed medial journals.</p>
+        <p>In her free time Dr. Hashmi enjoys spending time with her husband Nashib, a nephrologist and their three children. She is active in the community and her hobbies include traveling and reading books.</p>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="doc-modal" id="bio-desai" aria-labelledby="bio-desai-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/desai.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-desai-title">Ankit Desai, MD</h3>
+          <p class="doc-role">Retina Specialist &middot; Ophthalmology</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p class="doc-quote">&ldquo;I treat my patients like family.&rdquo;</p>
+        <p>Ankit Desai, MD is a board-certified ophthalmologist specializing in the medical and surgical treatment of vitreoretinal and macular diseases. He joined Spectrum Eye Institute in 2017. Prior to joining Spectrum Eye, Dr. Desai was in practice in Southern Illinois. In addition, he was an associate professor of ophthalmology at Henry Ford Hospital in Detroit, Michigan and Saint Louis University in Saint Louis, Missouri training future eye physicians.</p>
+        <p>Dr. Desai is a native Chicagoan, growing up in Joliet, Illinois. He attended Illinois Institute of Technology where he studied molecular biochemisty and biophysics. He then went on to earn his medical degree from the Chicago Medical School and graduated with honors. After completing his ophthalmology residency at Saint Louis University, he went on to complete at two-year surgical fellowship in Vitreoretinal disease at Henry Ford Hospital. He is on several editorial boards and has published in several peer-reviewed journals and presented at numerous meetings.</p>
+        <p>When not working, Dr. Desai is an avid tennis player, movie aficionado and is a die hard Chicago sports fan. Dr. Desai is excited to return to the Chicagoland area and provide exceptional care for our patients.</p>
+        <p>Dr. Desai is currently seeing patients at our Joliet and New Lenox locations and is on staff at Silver Cross Hospital.</p>
+        <h4 class="doc-sub">Societies and Organizations</h4>
+        <ul class="doc-list">
+          <li>American Academy of Ophthalmology</li>
+          <li>American Board of Ophthalmology</li>
+          <li>American Society of Retina Specialists</li>
+          <li>Illinois Society of Eye Physicians &amp; Surgeons</li>
+        </ul>
+        <h4 class="doc-sub">Fellowship</h4>
+        <ul class="doc-list">
+          <li>Surgical Retina, Henry Ford Hospital &ndash; Detroit, Michigan</li>
+        </ul>
+        <h4 class="doc-sub">Residency</h4>
+        <ul class="doc-list">
+          <li>Ophthalmology, Saint Louis University &ndash; St. Louis, Missouri</li>
+        </ul>
+        <h4 class="doc-sub">Medical School</h4>
+        <ul class="doc-list">
+          <li>M.D., Chicago Medical School &ndash; North Chicago, Illinois</li>
+        </ul>
+        <h4 class="doc-sub">Academic Affiliations</h4>
+        <ul class="doc-list">
+          <li>Associate professor, Saint Louis University &ndash; St. Louis, Missouri</li>
+          <li>Associate staff, Henry Ford Hospital &ndash; Detroit, Michigan</li>
+        </ul>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="doc-modal" id="bio-cullen-regan" aria-labelledby="bio-cullen-regan-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/cullen-regan.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-cullen-regan-title">Dr. Cullen-Regan</h3>
+          <p class="doc-role">Optometrist &middot; Optometry</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p>Dr. Cullen-Regan received her Doctor of Optometry degree from the Illinois College of Optometry in 1987. She has a bachelor&rsquo;s degree in both Visual Science and Biology from St. Xavier University.</p>
+        <p>Dr. Cullen-Regan&rsquo;s background has focused on children&rsquo;s and family vision, laser vision correction, and dry eye syndrome including punctal plug insertion. She has worked in the area since 1985.</p>
+        <p>Dr. Cullen-Regan is married with four children, serves as PTC treasurer for St. Mary School in Mokena and coaches volleyball. She is also a member of the American Optometric Association since 1983.</p>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="doc-modal" id="bio-patel" aria-labelledby="bio-patel-title">
+    <div class="doc-modal-inner">
+      <button class="doc-close" type="button" aria-label="Close biography" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="doc-modal-head">
+        <img src={withBase("assets/doctors/patel.jpg")} alt="" width="600" height="600" loading="lazy" decoding="async">
+        <div>
+          <h3 class="doc-modal-name" id="bio-patel-title">Priya Patel, OD</h3>
+          <p class="doc-role">Optometrist &middot; Optometry</p>
+        </div>
+      </div>
+      <div class="doc-modal-body">
+        <p>Priya Patel O.D., specializes in comprehensive eye exams, diabetic eye exams, contact lenses, and ocular disease. She received her Bachelor of Arts degree in Economics and Global Studies, and minored in Spanish for the Health Professions at the University of North Carolina-Chapel Hill. From there, she went on to receive her degree in optometry at the Illinois College of Optometry. She also completed a residency in Ocular Disease at Salem Veterans Affairs Medical Center.</p>
+        <p>Dr. Patel is a member of the Illinois Optometric Association and the American Optometric Association.</p>
+        <p>In her free time, Dr. Patel enjoys baking, traveling, and spending time with friends and family.</p>
+      </div>
+      <div class="doc-modal-foot">
+        <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </dialog>
+</main>
+<script is:inline defer src={withBase('scripts/doctors.js')}></script>
+</SiteLayout>

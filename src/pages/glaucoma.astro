@@ -1,0 +1,124 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Glaucoma Diagnosis & Treatment | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Glaucoma testing and treatment in New Lenox and Joliet, IL. Glaucoma is painless and can damage vision before you notice. Book an exam or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Glaucoma Diagnosis &amp; Treatment | Spectrum Eye Institute">
+<meta property="og:description" content="Glaucoma testing and treatment in New Lenox and Joliet, IL. Glaucoma is painless and can damage vision before you notice. Book an exam or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Glaucoma","url":"https://www.ophthalmologistjoliet.com/glaucoma/","about":{"@type":"MedicalProcedure","name":"Glaucoma"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are there any symptoms?","acceptedAnswer":{"@type":"Answer","text":"<p>Usually not, and that is what makes glaucoma dangerous. It is a painless disease that can cause permanent damage before you ever notice a difference in your vision. By the time most people see a change, nerve cells have already been lost.</p>"}},{"@type":"Question","name":"How is glaucoma diagnosed?","acceptedAnswer":{"@type":"Answer","text":"<p>With a thorough dilated examination. We measure the pressure inside the eye, look at the condition of the optic nerve, test your visual field and take your family history into account. No single one of those tells the whole story, which is why the full exam matters.</p>"}},{"@type":"Question","name":"Can glaucoma be cured?","acceptedAnswer":{"@type":"Answer","text":"<p>No. Glaucoma is treatable, but at this time there is no cure, and vision already lost does not come back. Treatment is about protecting the sight you still have, which is why finding it early makes such a difference.</p>"}},{"@type":"Question","name":"I have cataracts as well. Can both be treated?","acceptedAnswer":{"@type":"Answer","text":"<p>Often, yes. Our surgeons can perform a goniotomy at the same time as cataract surgery for patients who have both conditions, treating them in a single procedure. Your surgeon will tell you whether that is an option for your eyes.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Glaucoma</span></nav>
+      <h1>Glaucoma</h1>
+      <p class="lede">Glaucoma damages the optic nerve, usually because of pressure inside the eye &mdash; and it does it painlessly, often before you notice any change in your vision. It is treatable, and the earlier it is caught, the more sight there is to protect.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/slit-lamp-exam.jpg")} alt="An ophthalmologist examining a patient&rsquo;s eyes at a slit lamp in an exam room at Spectrum Eye Institute." width="976" height="650">
+      <figcaption>A dilated exam is how glaucoma is found.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">What glaucoma does</h2>
+      <p>Glaucoma is a group of conditions in which the optic nerve cells at the back of the eye die. This is usually caused by excessive pressure inside the eye, exerted by a fluid called aqueous humor. Those optic nerve cells are what turn the light entering your eye into signals your brain can understand, so as they slowly die, vision is lost.</p>
+      <p>High pressure inside the eye is not always dangerous. In susceptible people, though, it begins to damage the optic nerve &mdash; and because glaucoma is painless, it can cause permanent damage long before you notice any difference in your sight. Glaucoma is treatable, but at this time there is no cure, so what is lost cannot be recovered.</p>
+      <h2>How we test for it</h2>
+      <p>A thorough dilated examination is what finds glaucoma. It takes into account the pressure inside your eye, your family background, your visual field and the condition of the optic nerve itself, and together those let our doctors assess whether glaucoma is present.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>What it is</dt><dd>Loss of optic nerve cells, usually from raised eye pressure</dd>
+        <dt>Symptoms</dt><dd>Usually none until vision is already affected</dd>
+        <dt>How it is found</dt><dd>A thorough dilated exam</dd>
+        <dt>Outlook</dt><dd>Treatable, but not curable &mdash; early detection matters</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="section svc-listing" aria-labelledby="b1-title">
+  <div class="wrap">
+    <h2 id="b1-title">Who is more likely to develop glaucoma</h2>
+    <p class="svc-list-intro">You are at higher risk if you:</p>
+    <ul class="svc-checklist">
+      <li>are related to someone with glaucoma</li>
+      <li>have diabetes</li>
+      <li>have high blood pressure</li>
+      <li>are taking steroid medications</li>
+      <li>are over the age of 50</li>
+      <li>are of African descent</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section svc-notes">
+  <div class="wrap">
+    <p class="svc-note"><strong>If any of these apply to you,</strong> an eye exam is worth booking even if your vision seems fine &mdash; that is exactly when glaucoma is easiest to treat. Call <a href="tel:+18157293777">(815) 729-3777</a> to arrange one at either office.</p>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Book a glaucoma exam</h2>
+    <p>Glaucoma gives no warning, so testing is the only way to catch it early. We&rsquo;ll find you a time.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>Are there any symptoms?</span></summary>
+        <div class="faq-body"><p>Usually not, and that is what makes glaucoma dangerous. It is a painless disease that can cause permanent damage before you ever notice a difference in your vision. By the time most people see a change, nerve cells have already been lost.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>How is glaucoma diagnosed?</span></summary>
+        <div class="faq-body"><p>With a thorough dilated examination. We measure the pressure inside the eye, look at the condition of the optic nerve, test your visual field and take your family history into account. No single one of those tells the whole story, which is why the full exam matters.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Can glaucoma be cured?</span></summary>
+        <div class="faq-body"><p>No. Glaucoma is treatable, but at this time there is no cure, and vision already lost does not come back. Treatment is about protecting the sight you still have, which is why finding it early makes such a difference.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>I have cataracts as well. Can both be treated?</span></summary>
+        <div class="faq-body"><p>Often, yes. Our surgeons can perform a goniotomy at the same time as cataract surgery for patients who have both conditions, treating them in a single procedure. Your surgeon will tell you whether that is an option for your eyes.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

@@ -1,0 +1,103 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Corneal Transplant Surgery | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Corneal transplant surgery in New Lenox and Joliet, IL, with fellowship-trained cornea surgeons. Book an evaluation or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Corneal Transplant Surgery | Spectrum Eye Institute">
+<meta property="og:description" content="Corneal transplant surgery in New Lenox and Joliet, IL, with fellowship-trained cornea surgeons. Book an evaluation or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Corneal transplant","url":"https://www.ophthalmologistjoliet.com/corneal-transplant/","about":{"@type":"MedicalProcedure","name":"Corneal transplant"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know if I need a corneal transplant?","acceptedAnswer":{"@type":"Answer","text":"<p>You don&rsquo;t need to know &mdash; that is what the evaluation is for. Your surgeon will examine the cornea, establish what is causing the loss of vision and tell you whether a transplant is the right answer or whether something less involved would help.</p>"}},{"@type":"Question","name":"Who would perform my surgery?","acceptedAnswer":{"@type":"Answer","text":`<p>Dr. Majid Rassouli or Dr. Samra Hashmi, both of whom completed cornea fellowships in 2003 and have performed this surgery throughout their careers. You can read their full backgrounds on <a href="${withBase("our-doctors/")}">our doctors</a> page.</p>`}},{"@type":"Question","name":"Can glasses or contact lenses fix it instead?","acceptedAnswer":{"@type":"Answer","text":"<p>Sometimes, and that is always worth establishing first. Because the cornea does about two thirds of the eye&rsquo;s focusing, though, clouding or scarring there often cannot be corrected optically &mdash; the problem is the clarity of the tissue itself, not the prescription.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Corneal Transplant</span></nav>
+      <h1>Corneal transplant</h1>
+      <p class="lede">The cornea is the clear front window of the eye. When disease, injury or scarring clouds or distorts it, glasses and contact lenses can only do so much &mdash; and replacing the damaged tissue becomes the way to restore sight.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/eye-model-consult.webp")} alt="A clinician using an anatomical model of the eye to explain its structure to a patient." width="976" height="650">
+      <figcaption>We&rsquo;ll walk you through what is happening in your eye, in plain terms.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">Cornea care at Spectrum Eye Institute</h2>
+      <p>Corneal transplant surgery is performed here by two of our partners, both fellowship-trained in cornea.</p>
+      <p><strong>Dr. Majid Rassouli, DO</strong> completed his Cornea and Refractive Surgery Fellowship in 2003 at the University of Illinois, Chicago, and specializes in cataract surgery and cornea transplants.</p>
+      <p><strong>Dr. Samra Hashmi, MD</strong> completed her Fellowship in Refractive Surgery and Cornea in 2003 at the Cole Eye Institute, Cleveland Clinic Foundation, following a research fellowship in Cornea and External Diseases at the New York Eye and Ear Infirmary. She specializes in intraocular lens implant surgery, corneal transplant surgery and laser vision correction.</p>
+      <p>You can read more about both on <a href={withBase("our-doctors/")}>our doctors</a> page.</p>
+      <h2>Why the cornea matters</h2>
+      <p>The cornea is where light first enters the front of the eye, and it provides about two thirds of the eye&rsquo;s focusing power &mdash; the lens inside the eye provides the other third. That is why damage to the cornea affects vision so directly, and why clouding or distortion there often cannot be corrected with glasses or contact lenses alone.</p>
+      <p>A corneal transplant replaces damaged corneal tissue with healthy donor tissue. There is more than one surgical approach, and which one suits you depends on which layers of your cornea are affected. Your surgeon will examine your eye, explain the options in plain terms and recommend the approach that fits your cornea.</p>
+      <p class="svc-note"><strong>Not sure whether this applies to you?</strong> Most people come to us because their vision has become cloudy or distorted and glasses are no longer helping, or because another doctor has referred them. Either way, an evaluation is the starting point. Call <a href="tel:+18157293777">(815) 729-3777</a> and we&rsquo;ll arrange one.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>Procedure</dt><dd>Replacing damaged corneal tissue with healthy donor tissue</dd>
+        <dt>Our surgeons</dt><dd>Two fellowship-trained cornea specialists</dd>
+        <dt>Offices</dt><dd>New Lenox &amp; Joliet</dd>
+        <dt>First step</dt><dd>A full evaluation of your cornea</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Talk to a cornea specialist</h2>
+    <p>Book an evaluation at our New Lenox or Joliet office, or call and we&rsquo;ll find a time.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>How do I know if I need a corneal transplant?</span></summary>
+        <div class="faq-body"><p>You don&rsquo;t need to know &mdash; that is what the evaluation is for. Your surgeon will examine the cornea, establish what is causing the loss of vision and tell you whether a transplant is the right answer or whether something less involved would help.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Who would perform my surgery?</span></summary>
+        <div class="faq-body"><p>Dr. Majid Rassouli or Dr. Samra Hashmi, both of whom completed cornea fellowships in 2003 and have performed this surgery throughout their careers. You can read their full backgrounds on <a href={withBase("our-doctors/")}>our doctors</a> page.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Can glasses or contact lenses fix it instead?</span></summary>
+        <div class="faq-body"><p>Sometimes, and that is always worth establishing first. Because the cornea does about two thirds of the eye&rsquo;s focusing, though, clouding or scarring there often cannot be corrected optically &mdash; the problem is the clarity of the tissue itself, not the prescription.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

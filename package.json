@@ -1,0 +1,23 @@
+{
+  "name": "spectrum-eye-institute",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/astro/bin/astro.mjs dev",
+    "build": "node ./node_modules/astro/bin/astro.mjs build",
+    "check": "node ./node_modules/astro/bin/astro.mjs check",
+    "preview": "node ./node_modules/astro/bin/astro.mjs preview",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "~5.9.3"
+  }
+}

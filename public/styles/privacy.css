@@ -1,0 +1,10 @@
+.prose h2 { font-weight: 500; font-size: 32px; line-height: 1.15; margin: 48px 0 16px; }
+.prose h3 { font-weight: 600; font-size: 22px; line-height: 1.25; margin: 32px 0 12px; }
+.prose h2 + h3 { margin-top: 24px; }
+.prose .notice { font-weight: 600; color: var(--navy); margin: 0 0 12px; }
+.prose .meta { font-size: 15px; color: var(--muted); margin: 0 0 32px; }
+
+@media (max-width: 640px) {
+  .prose h2 { font-size: 27px; margin-top: 36px; }
+  .prose h3 { font-size: 20px; }
+}

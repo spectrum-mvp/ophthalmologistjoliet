@@ -1,0 +1,13 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = Omit<HTMLAttributes<'a'>, 'href' | 'target' | 'rel'>;
+---
+
+<a
+  {...Astro.props}
+  href="https://s.odoro.com/mvp/?platform=spectrum"
+  target="_blank"
+  rel="noopener"
+  data-appointment
+><slot /></a>

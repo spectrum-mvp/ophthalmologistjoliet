@@ -1,0 +1,156 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Comprehensive Eye Care | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Routine eye exams through to surgical care in New Lenox and Joliet, IL, coordinated with your optometrist. Book an appointment or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Comprehensive Eye Care | Spectrum Eye Institute">
+<meta property="og:description" content="Routine eye exams through to surgical care in New Lenox and Joliet, IL, coordinated with your optometrist. Book an appointment or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Comprehensive eye care","url":"https://www.ophthalmologistjoliet.com/comprehensive-eye-care/","about":{"@type":"MedicalProcedure","name":"Comprehensive eye care"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should I visit my ophthalmologist?","acceptedAnswer":{"@type":"Answer","text":"<p>If you have a history of eye disease, we recommend making regular appointments and following up as your ophthalmologist advises. Call for more information or to schedule an appointment.</p>"}},{"@type":"Question","name":"How do I know if I should schedule an appointment?","acceptedAnswer":{"@type":"Answer","text":"<p>If you are having eye discomfort or trouble with your vision, schedule an appointment. Health conditions such as high blood pressure or diabetes also increase your risk for certain eye diseases. If you have questions or think you might need to be seen, call us.</p>"}},{"@type":"Question","name":"What should I bring?","acceptedAnswer":{"@type":"Answer","text":"<p>Your insurance information, any referral from your primary care physician if you have not already sent it to us, and a list of all medications you are taking.</p>"}},{"@type":"Question","name":"Can I bring someone with me?","acceptedAnswer":{"@type":"Answer","text":"<p>Always. An extra set of ears is helpful so you don&rsquo;t forget anything important your ophthalmologist goes over with you &mdash; and if your eyes are dilated, you may be glad of the company on the way home.</p>"}},{"@type":"Question","name":"Any tips for protecting my eyes?","acceptedAnswer":{"@type":"Answer","text":"<p>Wear protective eyewear for things like mowing the grass, construction work and sports. If you wear contacts, take steps to prevent eye infections: wash your hands before handling them or touching your eyes, and replace them as directed.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Comprehensive Eye Care</span></nav>
+      <h1>Comprehensive eye care</h1>
+      <p class="lede">Routine eye examinations through to surgery, under one roof &mdash; and coordinated with the optometrist you already see. Most problems we treat are easier to deal with when they are found early, which is what a regular exam is for.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/eye-exam.webp")} alt="An ophthalmologist examining a patient&rsquo;s eyes at a slit lamp during a routine eye exam." width="976" height="650">
+      <figcaption>A full examination is the foundation of everything else we do.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">Care at Spectrum Eye Institute</h2>
+      <p>The professional and administrative staff at Spectrum Eye Institute strive to provide our patients with the best in medical and surgical services. Our refractive surgeons work closely with your optometrist in a coordinated effort to achieve the best possible outcome for you.</p>
+      <p>We offer state-of-the-art testing to get the most out of the vision available to you. Using the latest technology, we can detect possible problems before you experience any loss of vision or discomfort &mdash; which is the whole point of coming in before something feels wrong.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>Services</dt><dd>Routine exams through to surgical care</dd>
+        <dt>Coordination</dt><dd>We work alongside your optometrist</dd>
+        <dt>Arrive</dt><dd>15 minutes before your appointment</dd>
+        <dt>Bring</dt><dd>Insurance card, referral if required, medication list</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="section svc-lenses" aria-labelledby="b1-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="b1-title">Examinations and surgeries</h2>
+      <p class="section-note">Patient services include routine eye examinations, cataract, glaucoma, oculoplastic, laser and refractive surgeries.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <h3>Routine eye examinations</h3>
+        <p class="svc-tag">Where most care starts</p>
+        <p>A full examination checks how well you see, how healthy the eye is, and whether anything is developing quietly in the background. If you have a history of eye disease, we will tell you how often to come back.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Cataract &amp; lens surgery</h3>
+        <p class="svc-tag">Clouded lens, replaced</p>
+        <p>When a cataract clouds the eye&rsquo;s natural lens, we replace it with a clear implant chosen around how you use your eyes. <a href={withBase("cataract-surgery/")}>More on cataract surgery</a>.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Glaucoma care</h3>
+        <p class="svc-tag">Testing and treatment</p>
+        <p>Glaucoma is painless and gives no warning, so testing is how it gets caught. <a href={withBase("glaucoma/")}>More on glaucoma</a>.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Laser &amp; refractive surgery</h3>
+        <p class="svc-tag">Reducing your prescription</p>
+        <p>LASIK and related procedures reshape the cornea to correct nearsightedness, farsightedness and astigmatism. <a href={withBase("lasik/")}>More on LASIK</a>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-listing" aria-labelledby="b2-title">
+  <div class="wrap">
+    <h2 id="b2-title">Before your appointment</h2>
+    <p class="svc-list-intro">A few things to have ready, so your visit runs smoothly:</p>
+    <ul class="svc-checklist">
+      <li>Arrive 15 minutes before your appointment time</li>
+      <li>Bring your completed forms and your insurance cards</li>
+      <li>If your insurance requires a referral from your primary care physician, bring it with you</li>
+      <li>Bring a list of any medications you are currently taking</li>
+      <li>Expect that your eyes may be dilated &mdash; consider arranging a driver</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section svc-notes">
+  <div class="wrap">
+    <p class="svc-note"><strong>Need the patient forms?</strong> Call <a href="tel:+18157293777">(815) 729-3777</a> and our team will get them to you before your visit.</p>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Book an eye exam</h2>
+    <p>Whether it has been a year or rather longer, we&rsquo;ll find you a time at New Lenox or Joliet.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>How often should I visit my ophthalmologist?</span></summary>
+        <div class="faq-body"><p>If you have a history of eye disease, we recommend making regular appointments and following up as your ophthalmologist advises. Call for more information or to schedule an appointment.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>How do I know if I should schedule an appointment?</span></summary>
+        <div class="faq-body"><p>If you are having eye discomfort or trouble with your vision, schedule an appointment. Health conditions such as high blood pressure or diabetes also increase your risk for certain eye diseases. If you have questions or think you might need to be seen, call us.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>What should I bring?</span></summary>
+        <div class="faq-body"><p>Your insurance information, any referral from your primary care physician if you have not already sent it to us, and a list of all medications you are taking.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Can I bring someone with me?</span></summary>
+        <div class="faq-body"><p>Always. An extra set of ears is helpful so you don&rsquo;t forget anything important your ophthalmologist goes over with you &mdash; and if your eyes are dilated, you may be glad of the company on the way home.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Any tips for protecting my eyes?</span></summary>
+        <div class="faq-body"><p>Wear protective eyewear for things like mowing the grass, construction work and sports. If you wear contacts, take steps to prevent eye infections: wash your hands before handling them or touching your eyes, and replace them as directed.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

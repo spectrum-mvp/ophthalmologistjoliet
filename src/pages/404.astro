@@ -1,0 +1,29 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Page not found | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="This page isn’t available right now." />
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<link rel="icon" type="image/png" sizes="32x32" href={withBase('assets/favicon-32.png')} />
+<link rel="icon" type="image/png" sizes="512x512" href={withBase('assets/icon-512.png')} />
+<link rel="apple-touch-icon" href={withBase('assets/apple-touch-icon.png')} />
+</Fragment>
+<main id="main" class="page">
+  <div class="wrap">
+    <article class="prose">
+      <a class="back" href={withBase("")}>← Back to home</a>
+      <h1>Page not found</h1>
+<p>Our website is being rebuilt, so the page you’re looking for isn’t available right now. We’re still open and seeing patients.</p>
+<div class="cta-row">
+  <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+  <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+</div>
+    </article>
+  </div>
+</main>
+</SiteLayout>

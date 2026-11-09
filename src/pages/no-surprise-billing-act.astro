@@ -1,0 +1,44 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="No Surprise Billing Act | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Your right to a Good Faith Estimate of expected charges under the No Surprises Act.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="No Surprise Billing Act | Spectrum Eye Institute">
+<meta property="og:description" content="Your right to a Good Faith Estimate of expected charges under the No Surprises Act.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+</Fragment>
+<main id="main" class="page">
+  <div class="wrap">
+    <article class="prose">
+      <a class="back" href={withBase("")}>← Back to Home</a>
+      <h1>No Surprise Billing Act</h1>
+<p><strong>Right to Receive a Good Faith Estimate of Expected Charges Under the No Surprises Act</strong></p>
+<p>You have the right to receive a “Good Faith Estimate” explaining how much your health care will cost.</p>
+<p>Under the law, health care providers need to give patients who do not have health insurance, or who choose not to use their health care coverage, an estimate of their bill for health care items and services before those items or services are provided.</p>
+<ul>
+<li>You have the right to receive a Good Faith Estimate for the total expected cost of any health care items or services upon request or when scheduling such items or services. This includes related costs like medical tests, prescription drugs, equipment, and hospital fees.</li>
+<li>The estimate may be provided orally, if an uninsured (or self-pay) individual requests a good faith estimate in a method other than paper or electronically.</li>
+<li>If you schedule a health care item or service at least 10 business days in advance, your health care provider or facility gives you a Good Faith Estimate in writing within 3 business days after scheduling.</li>
+<li>If you schedule a health care item or service between 9 to 3 business days in advance, your health care provider or facility gives you a Good Faith Estimate in writing within 1 business day after scheduling.</li>
+<li>If your appointment is scheduled less than 3 days in advance, your health care provider is not required to prepare a Good Faith Estimate.</li>
+<li>You may also ask any health care provider or facility for a Good Faith Estimate before you schedule an item or service. If you do, the healthcare provider or facility gives you a Good Faith Estimate in writing within 3 business days after you ask.</li>
+<li>If you receive a bill that is at least $400 more for any provider or facility than your Good Faith Estimate from that provider or facility, you may dispute the bill.</li>
+<li>Make sure to save a copy or picture of your Good Faith Estimate and the bill.</li>
+</ul>
+<p>For questions or more information about your right to a Good Faith Estimate, visit <a href="https://www.cms.gov/nosurprises/consumers">www.cms.gov/nosurprises/consumers</a>, email <a href="mailto:FederalPPDRQuestions@cms.hhs.gov">FederalPPDRQuestions@cms.hhs.gov</a>, or call <a href="tel:+18009853059">1-800-985-3059</a>.</p>
+    </article>
+  </div>
+</main>
+</SiteLayout>

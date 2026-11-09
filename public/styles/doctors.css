@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+[hidden]:not([hidden=until-found i]) {
+  display: none !important;
+}

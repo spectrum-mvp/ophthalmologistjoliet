@@ -1,0 +1,108 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Spectrum Eye Institute | Eye Care in New Lenox & Joliet, IL">
+<Fragment slot="head">
+<meta name="description" content="Spectrum Eye Institute is open and seeing patients in New Lenox and Joliet, IL. Schedule an appointment online or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Spectrum Eye Institute | Eye Care in New Lenox &amp; Joliet, IL">
+<meta property="og:description" content="Spectrum Eye Institute is open and seeing patients in New Lenox and Joliet, IL. Schedule an appointment online or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"MedicalOrganization","@id":"https://www.ophthalmologistjoliet.com/#org","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","logo":"https://www.ophthalmologistjoliet.com/assets/spectrum-logo.png","telephone":"+18157293777","sameAs":["https://www.facebook.com/spec.eye.institute"],"parentOrganization":{"@type":"Organization","name":"Midwest Vision Partners","url":"https://midwestvision.com/"}},{"@type":"MedicalClinic","name":"Spectrum Eye Institute – New Lenox","parentOrganization":{"@id":"https://www.ophthalmologistjoliet.com/#org"},"telephone":"+18157231854","address":{"@type":"PostalAddress","streetAddress":"672 Cedar Crossings Dr","addressLocality":"New Lenox","addressRegion":"IL","postalCode":"60451","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"16:00"}]},{"@type":"MedicalClinic","name":"Spectrum Eye Institute – Joliet","parentOrganization":{"@id":"https://www.ophthalmologistjoliet.com/#org"},"telephone":"+18157293777","address":{"@type":"PostalAddress","streetAddress":"963 129th Infantry Dr, Ste 110","addressLocality":"Joliet","addressRegion":"IL","postalCode":"60435","addressCountry":"US"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="eyebrow">Providers of Superior Ophthalmologic Care</div>
+      <h1>We’re open and seeing patients.</h1>
+      <p class="lede">Our new website is on the way. In the meantime, you can request an appointment online or call our team, and we’ll be glad to help.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <aside class="hero-panel" aria-label="Quick contact">
+      <div>
+        <div class="panel-label">Two offices</div>
+        <div class="panel-value">New Lenox &amp; Joliet</div>
+      </div>
+      <div class="rule"></div>
+      <div>
+        <div class="panel-label">Main phone line</div>
+        <a class="panel-phone" href="tel:+18157293777">(815) 729-3777</a>
+      </div>
+      <div class="rule"></div>
+      <a class="panel-link" href={withBase("our-doctors/")}>Meet Our Doctors &rarr;</a>
+      <div class="rule"></div>
+      <a class="panel-link" href="#locations">See Addresses &amp; Directions ↓</a>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="locations" aria-labelledby="locations-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="locations-title">Our locations</h2>
+      <p class="section-note">Hours vary by office. Please call before your visit to confirm.</p>
+    </div>
+    <div class="locations">
+
+      <article class="location">
+        <div class="location-body">
+          <h3>New Lenox</h3>
+          <address>672 Cedar Crossings Dr<br>New Lenox, IL 60451</address>
+          <a class="tel" href="tel:+18157231854">(815) 723-1854</a>
+          <div class="hours"><strong>Mon–Fri</strong> 8 AM–4 PM<br><strong>Sat–Sun</strong> Closed</div>
+          <a class="directions" href="https://maps.app.goo.gl/Cz8gzgELLLHvJnkx9">Get Directions →</a>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=672+Cedar+Crossings+Dr%2C+New+Lenox%2C+IL+60451&amp;output=embed" title="Map of Spectrum Eye Institute, New Lenox office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </article>
+
+      <article class="location">
+        <div class="location-body">
+          <h3>Joliet</h3>
+          <address>963 129th Infantry Dr, Ste 110<br>Joliet, IL 60435</address>
+          <a class="tel" href="tel:+18157293777">(815) 729-3777</a>
+          <div class="hours">Call for hours</div>
+          <a class="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435">Get Directions →</a>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435&amp;output=embed" title="Map of Spectrum Eye Institute, Joliet office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="services-intro">
+      <h2 id="services-title">What we treat</h2>
+      <p>Subspecialty eye care for patients across Cook, Will, Grundy, Kendall and Kankakee Counties.</p>
+    </div>
+    <ul class="service-list">
+      <li><a href={withBase("lasik/")}>LASIK vision correction</a></li>
+      <li><a href={withBase("cataract-surgery/")}>Cataract surgery &amp; premium lenses</a></li>
+      <li><a href={withBase("glaucoma/")}>Glaucoma treatment</a></li>
+      <li><a href={withBase("diabetic-retinopathy/")}>Diabetic eye care</a></li>
+      <li><a href={withBase("corneal-transplant/")}>Corneal transplant surgery</a></li>
+      <li><a href={withBase("comprehensive-eye-care/")}>Comprehensive eye care</a></li>
+      <li><a href={withBase("cosmetic-injectables/")}>Cosmetic injectables</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

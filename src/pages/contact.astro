@@ -1,0 +1,56 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Contact Us | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Contact Spectrum Eye Institute in New Lenox and Joliet, IL. Addresses, phone numbers, hours and directions for both offices. Call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Contact Us | Spectrum Eye Institute">
+<meta property="og:description" content="Contact Spectrum Eye Institute in New Lenox and Joliet, IL. Addresses, phone numbers, hours and directions for both offices. Call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777","sameAs":["https://www.facebook.com/spec.eye.institute"],"location":[{"@type":"MedicalClinic","name":"Spectrum Eye Institute – New Lenox","telephone":"+18157231854","address":{"@type":"PostalAddress","streetAddress":"672 Cedar Crossings Dr","addressLocality":"New Lenox","addressRegion":"IL","postalCode":"60451","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"16:00"}]},{"@type":"MedicalClinic","name":"Spectrum Eye Institute – Joliet","telephone":"+18157293777","address":{"@type":"PostalAddress","streetAddress":"963 129th Infantry Dr, Ste 110","addressLocality":"Joliet","addressRegion":"IL","postalCode":"60435","addressCountry":"US"}}]})}></script>
+</Fragment>
+<main id="main" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Contact us</h1>
+      <p class="section-note">Call <a href="tel:+18157293777">(815) 729-3777</a> to reach either office, or request an appointment online. Hours vary by office &mdash; please call before your visit to confirm.</p>
+    </div>
+    <div class="locations">
+
+      <article class="location">
+        <div class="location-body">
+          <h3>New Lenox</h3>
+          <address>672 Cedar Crossings Dr<br>New Lenox, IL 60451</address>
+          <a class="tel" href="tel:+18157231854">(815) 723-1854</a>
+          <div class="hours"><strong>Mon–Fri</strong> 8 AM–4 PM<br><strong>Sat–Sun</strong> Closed</div>
+          <a class="directions" href="https://maps.app.goo.gl/Cz8gzgELLLHvJnkx9">Get Directions →</a>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=672+Cedar+Crossings+Dr%2C+New+Lenox%2C+IL+60451&amp;output=embed" title="Map of Spectrum Eye Institute, New Lenox office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </article>
+
+      <article class="location">
+        <div class="location-body">
+          <h3>Joliet</h3>
+          <address>963 129th Infantry Dr, Ste 110<br>Joliet, IL 60435</address>
+          <a class="tel" href="tel:+18157293777">(815) 729-3777</a>
+          <div class="hours">Call for hours</div>
+          <a class="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435">Get Directions →</a>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435&amp;output=embed" title="Map of Spectrum Eye Institute, Joliet office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </article>
+
+    </div>
+  </div>
+</main>
+</SiteLayout>

@@ -1,0 +1,94 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Botox Cosmetic | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Botox Cosmetic treatments for deep wrinkles and crow&rsquo;s feet around the eyes, in New Lenox and Joliet, IL. Book a consultation or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Botox Cosmetic | Spectrum Eye Institute">
+<meta property="og:description" content="Botox Cosmetic treatments for deep wrinkles and crow&rsquo;s feet around the eyes, in New Lenox and Joliet, IL. Book a consultation or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Cosmetic injectables","url":"https://www.ophthalmologistjoliet.com/cosmetic-injectables/","about":{"@type":"MedicalProcedure","name":"Cosmetic injectables"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Botox Cosmetic treat here?","acceptedAnswer":{"@type":"Answer","text":"<p>Deep wrinkles and crow&rsquo;s feet around the eyes &mdash; the lines that tend to show first, in the area our doctors work in every day.</p>"}},{"@type":"Question","name":"How do I get started?","acceptedAnswer":{"@type":"Answer","text":"<p>With a consultation. Call <a href=\"tel:+18157293777\">(815) 729-3777</a> or book online, and we will go through your options together.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Cosmetic Injectables</span></nav>
+      <h1>Cosmetic injectables</h1>
+      <p class="lede">Ophthalmologists are known for medically necessary care, but the area around the eyes is also where facial lines show first &mdash; and it is an area we know well. We offer Botox Cosmetic treatments alongside our medical and surgical services.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/active-senior-woman.webp")} alt="A smiling woman stretching on a bench outdoors in a park on a sunny day." width="976" height="650">
+      <figcaption>Feeling at home in your own skin.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">Cosmetic treatments at Spectrum Eye Institute</h2>
+      <p>Though ophthalmologists are known for medically necessary services, we also offer cosmetic procedures and services to help you look and feel your best. We offer Botox Cosmetic treatments that smooth deep wrinkles and crow&rsquo;s feet around your eyes.</p>
+      <p>Everything starts with a consultation. We will talk through what is bothering you, what treatment can realistically do about it and what it involves, so you can decide without any pressure. Call our offices for more information or to schedule one.</p>
+      <p class="svc-note"><strong>Already coming in for an eye appointment?</strong> Mention it when you book and we can discuss cosmetic treatment at the same visit. Call <a href="tel:+18157293777">(815) 729-3777</a>.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>Treatment</dt><dd>Botox Cosmetic</dd>
+        <dt>Area treated</dt><dd>Deep wrinkles and crow&rsquo;s feet around the eyes</dd>
+        <dt>First step</dt><dd>A consultation</dd>
+        <dt>Offices</dt><dd>New Lenox &amp; Joliet</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Schedule a consultation</h2>
+    <p>Call our offices for more information, or book a time that suits you.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>What does Botox Cosmetic treat here?</span></summary>
+        <div class="faq-body"><p>Deep wrinkles and crow&rsquo;s feet around the eyes &mdash; the lines that tend to show first, in the area our doctors work in every day.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>How do I get started?</span></summary>
+        <div class="faq-body"><p>With a consultation. Call <a href="tel:+18157293777">(815) 729-3777</a> or book online, and we will go through your options together.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

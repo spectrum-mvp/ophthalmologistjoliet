@@ -1,0 +1,31 @@
+---
+import AppointmentLink from './AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src={withBase("assets/spectrum-logo-white.png")} alt="Spectrum Eye Institute" width="1000" height="470" loading="lazy">
+        <p>A Midwest Vision Partners practice</p>
+      </div>
+      <div class="footer-actions">
+        <AppointmentLink class="btn btn-light">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-ghost" href="tel:+18157293777">Call (815) 729-3777</a>
+        <a class="social" href="https://www.facebook.com/spec.eye.institute" aria-label="Spectrum Eye Institute on Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-bottom">
+      <nav class="legal-nav" aria-label="Legal notices">
+        <a href={withBase("")}>Home</a>
+        <a href={withBase("no-surprise-billing-act/")}>No Surprise Billing Act</a>
+        <a href={withBase("notice-of-nondiscrimination/")}>Notice of Nondiscrimination</a>
+        <a href={withBase("notice-of-availability/")}>Notice of Availability</a>
+        <a href={withBase("privacy-policy/")}>Privacy Policy</a>
+      </nav>
+      <div class="copyright">&copy; <span id="year"></span> Spectrum Eye Institute</div>
+    </div>
+  </div>
+</footer>

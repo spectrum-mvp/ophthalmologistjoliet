@@ -1,0 +1,150 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Diabetic Retinopathy | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Diabetic retinopathy screening and treatment in New Lenox and Joliet, IL. A yearly dilated eye exam protects sight. Call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Diabetic Retinopathy | Spectrum Eye Institute">
+<meta property="og:description" content="Diabetic retinopathy screening and treatment in New Lenox and Joliet, IL. A yearly dilated eye exam protects sight. Call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Diabetic retinopathy","url":"https://www.ophthalmologistjoliet.com/diabetic-retinopathy/","about":{"@type":"MedicalProcedure","name":"Diabetic retinopathy"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"I feel fine. Do I really need a yearly exam?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Diabetic retinopathy typically causes no noticeable symptoms until significant damage has occurred and complications have developed. A yearly dilated exam is how it gets caught while treatment still works well.</p>"}},{"@type":"Question","name":"What are the early stages called?","acceptedAnswer":{"@type":"Answer","text":"<p>The early forms are called non-proliferative or background retinopathy. If either leads to swelling at the macula &mdash; the center of the retina &mdash; you may have difficulty with up-close work such as reading, or notice a gradual blurring.</p>"}},{"@type":"Question","name":"Can diabetic retinopathy be cured?","acceptedAnswer":{"@type":"Answer","text":"<p>No, there is no cure. Laser treatment (photocoagulation) can be very effective at preventing further vision loss if it is done before the retina has been severely damaged, and surgical removal of the vitreous gel may also help improve vision in some cases.</p>"}},{"@type":"Question","name":"Does Type 1 or Type 2 diabetes carry more risk?","acceptedAnswer":{"@type":"Answer","text":"<p>People with Type 1 diabetes (juvenile onset) are more likely to develop diabetic retinopathy than people with Type 2 (adult onset). For both, the longer you have had diabetes, the higher the risk.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Diabetic Retinopathy</span></nav>
+      <h1>Diabetic retinopathy</h1>
+      <p class="lede">Diabetic retinopathy is a common complication of diabetes and the leading cause of blindness among working-age Americans. It is not painful, and it often causes no symptoms until real damage has been done &mdash; which is why a yearly eye exam matters so much.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">What diabetic retinopathy is</h2>
+      <p>Diabetic retinopathy is an eye disease affecting the retina, and a frequent complication of diabetes. Diabetes damages the small blood vessels in the retina, which can lead to poor vision and even blindness.</p>
+      <p>In the early stages, the tiny blood vessels in the eye weaken and develop small bulges that may burst and leak into the retina and into the gel-like fluid inside the eye, called the vitreous. As the condition progresses, fragile new blood vessels grow on the surface of the retina and impair vision. That later stage is called proliferative retinopathy.</p>
+      <p>Although diabetic retinopathy is not painful, it can severely damage your vision. If the earlier forms lead to swelling at the center of the retina, you may struggle with close work such as reading, or notice a gradual blurring. If the abnormal vessels bleed, vision can become spotty or hazy, or disappear altogether.</p>
+      <h2>Who it affects</h2>
+      <p>Risk depends largely on two things: how long you have had diabetes, and which type you have. The longer you have had diabetes, the more likely you are to develop retinopathy, and people with Type 1 (juvenile onset) are more likely to develop it than people with Type 2 (adult onset).</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>What it is</dt><dd>Damage to the small blood vessels in the retina</dd>
+        <dt>Symptoms</dt><dd>Often none in the early stages</dd>
+        <dt>Who is at risk</dt><dd>Anyone with diabetes; risk rises the longer you have had it</dd>
+        <dt>Screening</dt><dd>A dilated eye exam every year</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="section svc-listing" aria-labelledby="b1-title">
+  <div class="wrap">
+    <h2 id="b1-title">Symptoms to call us about</h2>
+    <p class="svc-list-intro">It is possible to have diabetic retinopathy for a long time without noticing anything. If any of these appear for the first time or get worse, call your doctor immediately:</p>
+    <ul class="svc-checklist">
+      <li>Blurred or distorted vision, or difficulty reading</li>
+      <li>Floaters or flashes of light in your field of vision</li>
+      <li>Partial or total loss of vision, or a shadow or veil across your field of vision</li>
+      <li>Pain in the eye</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section svc-lenses" aria-labelledby="b2-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="b2-title">Protecting your sight</h2>
+      <p class="section-note">Most vision loss from diabetic retinopathy is preventable, and nearly all of that comes down to catching it early.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <h3>Keep levels near normal</h3>
+        <p class="svc-tag">Blood sugar and blood pressure</p>
+        <p>Keeping blood sugar and blood pressure close to normal slows the progress of retinopathy and helps prevent vision loss. It is the single biggest thing within your control.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Get a yearly exam</h3>
+        <p class="svc-tag">Dilated, by an eye specialist</p>
+        <p>Screening does not prevent diabetic eye disease, but it catches it early enough to treat &mdash; which is what prevents the vision loss. Once a year, every year.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Don&rsquo;t wait on changes</h3>
+        <p class="svc-tag">Call us the same day</p>
+        <p>Floaters, flashes of light, pain or pressure in the eye, blurry or double vision can all signal serious damage to the retina. The sooner it is treated, the more effective treatment is.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Treatment options</h3>
+        <p class="svc-tag">Laser and surgery</p>
+        <p>There is no cure, but laser treatment (photocoagulation) is very effective at preventing vision loss when it is done before the retina is severely damaged. Surgical removal of the vitreous gel can also help in some cases.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-notes">
+  <div class="wrap">
+    <p class="svc-note"><strong>Retina care at Spectrum Eye:</strong> diabetic retinopathy is managed by our retina specialist. See <a href={withBase("our-doctors/")}>our doctors</a> for who you would be seeing, or call <a href="tel:+18157293777">(815) 729-3777</a> to book.</p>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Book your diabetic eye exam</h2>
+    <p>If you have diabetes, a dilated exam once a year is the best protection your sight has.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>I feel fine. Do I really need a yearly exam?</span></summary>
+        <div class="faq-body"><p>Yes. Diabetic retinopathy typically causes no noticeable symptoms until significant damage has occurred and complications have developed. A yearly dilated exam is how it gets caught while treatment still works well.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>What are the early stages called?</span></summary>
+        <div class="faq-body"><p>The early forms are called non-proliferative or background retinopathy. If either leads to swelling at the macula &mdash; the center of the retina &mdash; you may have difficulty with up-close work such as reading, or notice a gradual blurring.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Can diabetic retinopathy be cured?</span></summary>
+        <div class="faq-body"><p>No, there is no cure. Laser treatment (photocoagulation) can be very effective at preventing further vision loss if it is done before the retina has been severely damaged, and surgical removal of the vitreous gel may also help improve vision in some cases.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Does Type 1 or Type 2 diabetes carry more risk?</span></summary>
+        <div class="faq-body"><p>People with Type 1 diabetes (juvenile onset) are more likely to develop diabetic retinopathy than people with Type 2 (adult onset). For both, the longer you have had diabetes, the higher the risk.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

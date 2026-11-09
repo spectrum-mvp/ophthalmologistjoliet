@@ -1,0 +1,148 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Cataract Surgery | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="Cataract surgery in New Lenox and Joliet, IL. Laser-assisted technique, monofocal, toric, multifocal and extended-depth-of-focus lens options. Call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="Cataract Surgery | Spectrum Eye Institute">
+<meta property="og:description" content="Cataract surgery in New Lenox and Joliet, IL. Laser-assisted technique, monofocal, toric, multifocal and extended-depth-of-focus lens options. Call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"Cataract surgery","url":"https://www.ophthalmologistjoliet.com/cataract-surgery/","about":{"@type":"MedicalProcedure","name":"Cataract surgery"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a cataract?","acceptedAnswer":{"@type":"Answer","text":"<p>A cataract is a clouding of the natural lens of the eye. The lens is about the size of an M&amp;M and sits just behind the colored iris. At birth the lens is clear; over time it clouds and vision gets blurry. A cataract can progress until there is a complete loss of vision in the eye, and neither diet nor laser treatment will make a cataract go away. Cataract surgery can restore your vision long before the loss becomes significant enough to interfere with daily activities.</p>"}},{"@type":"Question","name":"I have astigmatism. Do I have options?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. About half the population is born with corneas shaped in a way that creates astigmatism, which normally means glasses or contact lenses for clear distance vision. A toric IOL can correct, or at least partially correct, naturally occurring corneal astigmatism, so you are less dependent on glasses for distance vision after cataract surgery.</p>"}},{"@type":"Question","name":"What is presbyopia, and what are my choices?","acceptedAnswer":{"@type":"Answer","text":"<p>Presbyopia is part of normal aging and happens to everyone. It is caused by the natural lens losing flexibility and the focusing muscle weakening, and it becomes noticeable around age 45 &mdash; the point at which most people start wearing reading glasses or bifocals.</p><p>A standard monofocal IOL does not treat presbyopia, so patients who choose one still need reading glasses afterward. Presbyopia-correcting lenses, such as multifocal and trifocal IOLs, allow most patients to see far away and up close without glasses.</p>"}},{"@type":"Question","name":"Will I still need glasses after surgery?","acceptedAnswer":{"@type":"Answer","text":"<p>That depends on the lens you choose. A monofocal lens gives clear distance vision, and you will likely still need glasses for reading. Premium lenses reduce how often you reach for glasses, but no lens guarantees you will never need them &mdash; many patients still prefer readers for small print or long stretches of reading.</p>"}},{"@type":"Question","name":"What should I expect right after surgery?","acceptedAnswer":{"@type":"Answer","text":"<p>A few things worth keeping in mind:</p><ul><li>Don&rsquo;t judge your vision until both eyes have been done. It is hard for your brain to reconcile the difference between the two eyes until they can work together.</li><li>You may notice glare and halos around lights. These usually improve within a few months.</li><li>Your range of vision will keep settling in over time. Have patience.</li></ul>"}},{"@type":"Question","name":"Is everyone a candidate for a premium lens?","acceptedAnswer":{"@type":"Answer","text":"<p>Your ophthalmologist will evaluate whether a premium lens is a good fit for you. An autoimmune condition or a history of eye infections may make one less suitable. Many patients with glaucoma and some macular conditions are still successfully implanted with extended-range lenses &mdash; it is a conversation to have at your evaluation.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Cataract Surgery</span></nav>
+      <h1>Cataract surgery</h1>
+      <p class="lede">A cataract clouds the eye&rsquo;s natural lens and blurs your vision. Our surgeons remove that lens and replace it with a clear implant chosen around how you actually use your eyes &mdash; driving, reading, screens, or all three.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/consultation.jpg")} alt="An ophthalmologist reviewing eye anatomy charts with a patient in an exam room at Spectrum Eye Institute." width="976" height="650">
+      <figcaption>Talking through the options at a pre-surgical consultation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">Cataract surgery at Spectrum Eye</h2>
+      <p>With the expert skills of our highly trained ophthalmologists, cataract treatment clears the clouded vision a cataract causes. During surgery the clouded natural lens is removed and replaced with an intraocular lens, or IOL.</p>
+      <p>Our physicians use the latest premium lens technology &mdash; PanOptix, Vivity and Toric. They have access to femtosecond lasers for cataract surgery and to ORA intraoperative measurement, and they use three-in-one drops from ImprimisRx. For patients who also have glaucoma, they can perform a goniotomy at the same time as cataract surgery, which treats both conditions in a single procedure.</p>
+      <h2>Choosing your lens</h2>
+      <p>The lens you choose is the decision that shapes your vision afterward, and there is a lens for most lifestyles and needs. Your surgeon will walk through the options at your evaluation and recommend what suits your eyes and your day-to-day.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>Procedure</dt><dd>Outpatient, one eye at a time</dd>
+        <dt>Technique</dt><dd>Femtosecond laser available; no-stitch, no-patch method</dd>
+        <dt>Lens options</dt><dd>Monofocal, toric, multifocal/trifocal, extended depth of focus</dd>
+        <dt>Offices</dt><dd>New Lenox &amp; Joliet</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="section svc-lenses" aria-labelledby="b1-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="b1-title">Lens options</h2>
+      <p class="section-note">Which lens is right for you depends on your eyes, your daily activities and your budget.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <h3>Monofocal</h3>
+        <p class="svc-tag">Usually covered by insurance or Medicare</p>
+        <p>Provides clear distance vision. You will likely still need glasses for reading, and possibly for distance as well. There is nothing wrong with choosing a monofocal lens &mdash; many of our patients do.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Toric</h3>
+        <p class="svc-tag">For astigmatism</p>
+        <p>A foldable, single-piece lens implanted during cataract surgery to replace the clouded lens. Its design reduces or eliminates corneal astigmatism and significantly improves uncorrected distance vision &mdash; in one procedure, without additional surgery.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Multifocal &amp; trifocal</h3>
+        <p class="svc-tag">Near, intermediate and distance</p>
+        <p>Most IOLs correct vision at a single distance. A multifocal or trifocal lens, such as the Clareon PanOptix&reg;, is designed to correct near, far and in between, giving you the best chance at freedom from glasses.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Extended depth of focus</h3>
+        <p class="svc-tag">Continuous range, fewer halos</p>
+        <p>Lenses such as the Clareon Vivity&reg; use non-diffractive technology to create a continuous, extended range of vision in both bright and dim light, with fewer of the halos, starbursts and glare some patients report with diffractive multifocal lenses. A toric version is available if you also have astigmatism.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-notes">
+  <div class="wrap">
+    <p class="svc-note"><strong>About cost:</strong> Medicare and most insurers cover cataract surgery itself, but they generally cover only a standard monofocal lens. If you choose a premium lens to reduce your dependence on glasses, you pay the difference for the lens out of pocket. Financing is available through Alphaeon Credit &mdash; ask our team for details.</p>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Ready to talk about cataract surgery?</h2>
+    <p>Book an evaluation at our New Lenox or Joliet office, or call and we&rsquo;ll find a time that works.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>What is a cataract?</span></summary>
+        <div class="faq-body"><p>A cataract is a clouding of the natural lens of the eye. The lens is about the size of an M&amp;M and sits just behind the colored iris. At birth the lens is clear; over time it clouds and vision gets blurry. A cataract can progress until there is a complete loss of vision in the eye, and neither diet nor laser treatment will make a cataract go away. Cataract surgery can restore your vision long before the loss becomes significant enough to interfere with daily activities.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>I have astigmatism. Do I have options?</span></summary>
+        <div class="faq-body"><p>Yes. About half the population is born with corneas shaped in a way that creates astigmatism, which normally means glasses or contact lenses for clear distance vision. A toric IOL can correct, or at least partially correct, naturally occurring corneal astigmatism, so you are less dependent on glasses for distance vision after cataract surgery.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>What is presbyopia, and what are my choices?</span></summary>
+        <div class="faq-body"><p>Presbyopia is part of normal aging and happens to everyone. It is caused by the natural lens losing flexibility and the focusing muscle weakening, and it becomes noticeable around age 45 &mdash; the point at which most people start wearing reading glasses or bifocals.</p><p>A standard monofocal IOL does not treat presbyopia, so patients who choose one still need reading glasses afterward. Presbyopia-correcting lenses, such as multifocal and trifocal IOLs, allow most patients to see far away and up close without glasses.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Will I still need glasses after surgery?</span></summary>
+        <div class="faq-body"><p>That depends on the lens you choose. A monofocal lens gives clear distance vision, and you will likely still need glasses for reading. Premium lenses reduce how often you reach for glasses, but no lens guarantees you will never need them &mdash; many patients still prefer readers for small print or long stretches of reading.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>What should I expect right after surgery?</span></summary>
+        <div class="faq-body"><p>A few things worth keeping in mind:</p><ul><li>Don&rsquo;t judge your vision until both eyes have been done. It is hard for your brain to reconcile the difference between the two eyes until they can work together.</li><li>You may notice glare and halos around lights. These usually improve within a few months.</li><li>Your range of vision will keep settling in over time. Have patience.</li></ul></div>
+      </details>
+      <details class="faq">
+        <summary><span>Is everyone a candidate for a premium lens?</span></summary>
+        <div class="faq-body"><p>Your ophthalmologist will evaluate whether a premium lens is a good fit for you. An autoimmune condition or a history of eye infections may make one less suitable. Many patients with glaucoma and some macular conditions are still successfully implanted with extended-range lenses &mdash; it is a conversation to have at your evaluation.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>

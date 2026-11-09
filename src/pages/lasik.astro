@@ -1,0 +1,158 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import AppointmentLink from '../components/AppointmentLink.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="LASIK Eye Surgery | Spectrum Eye Institute">
+<Fragment slot="head">
+<meta name="description" content="LASIK laser vision correction in New Lenox and Joliet, IL, for nearsightedness, farsightedness and astigmatism. Book a consultation or call (815) 729-3777.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spectrum Eye Institute">
+<meta property="og:title" content="LASIK Eye Surgery | Spectrum Eye Institute">
+<meta property="og:description" content="LASIK laser vision correction in New Lenox and Joliet, IL, for nearsightedness, farsightedness and astigmatism. Book a consultation or call (815) 729-3777.">
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+<meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png">
+<meta name="theme-color" content="#3853a4">
+<link rel="icon" type="image/png" sizes="32x32" href={withBase("assets/favicon-32.png")}>
+<link rel="icon" type="image/png" sizes="512x512" href={withBase("assets/icon-512.png")}>
+<link rel="apple-touch-icon" href={withBase("assets/apple-touch-icon.png")}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"MedicalWebPage","name":"LASIK","url":"https://www.ophthalmologistjoliet.com/lasik/","about":{"@type":"MedicalProcedure","name":"LASIK"},"publisher":{"@type":"MedicalOrganization","name":"Spectrum Eye Institute","url":"https://www.ophthalmologistjoliet.com/","telephone":"+18157293777"}})}></script>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What actually happens during the procedure?","acceptedAnswer":{"@type":"Answer","text":"<p>LASIK is done as an outpatient procedure. Numbing eye drops go in right before surgery, and a mild sedative is available if you are anxious. The eyelid is cleansed and held open with a small instrument, and the other eye is covered.</p><p>A thin, hinged flap is created in the surface of the cornea and folded back to expose the tissue underneath. The laser is then applied for roughly 30 to 60 seconds, depending on how much correction is needed, and the laser&rsquo;s computer calculates the exact number of pulses. You will hear a snapping sound and may notice a faint odor. The flap is then laid back in place without stitches, and antibiotic and anti-inflammatory drops are put in.</p>"}},{"@type":"Question","name":"Will it hurt?","acceptedAnswer":{"@type":"Answer","text":"<p>Most patients feel no discomfort during the procedure itself. There can be mild discomfort for the first few days afterward, sometimes helped by pain relief and artificial tears, but most people are comfortable throughout recovery.</p>"}},{"@type":"Question","name":"How soon will I see clearly?","acceptedAnswer":{"@type":"Answer","text":"<p>Many patients notice a marked improvement almost immediately, but your best vision may take several days or weeks &mdash; occasionally months &mdash; to settle. Because of the blurriness and any sedative, you cannot drive yourself home, and surgery will not go ahead unless a driver is present or other arrangements are made.</p>"}},{"@type":"Question","name":"What does recovery involve?","acceptedAnswer":{"@type":"Answer","text":"<p>You will be seen the day after surgery, then at about one week and one month, with extra visits if needed. The main thing to protect in the first one to two weeks is the flap: avoid rubbing your eyes, be careful of fingernails, and wear the protective shields we give you while you sleep for the first few nights.</p><p>Drops matter. Following the medication schedule closely lowers the risk of infection, keeps you comfortable and gives you the best visual result. Most patients only need them for a few weeks.</p>"}},{"@type":"Question","name":"Will I still need glasses?","acceptedAnswer":{"@type":"Answer","text":"<p>Vision improves without glasses for the great majority of patients, but some still need an enhancement, glasses or contact lenses afterward. LASIK does not treat presbyopia, so reading glasses are still likely as you get older.</p>"}}]})}></script>
+</Fragment>
+<main id="main">
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("")}>Home</a> <span aria-hidden="true">/</span> <span aria-current="page">LASIK</span></nav>
+      <h1>LASIK</h1>
+      <p class="lede">LASIK reshapes the cornea so light focuses properly on the retina. It can correct nearsightedness, farsightedness and astigmatism &mdash; and for most people, sharply reduce how much they depend on glasses and contacts.</p>
+      <div class="cta-row">
+        <AppointmentLink class="btn btn-primary btn-lg">Schedule Appointment</AppointmentLink>
+        <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+      </div>
+    </div>
+    <figure class="svc-figure">
+      <img src={withBase("assets/services/laser-suite.webp")} alt="A Spectrum Eye Institute surgeon at the microscope of an excimer laser during a laser vision correction procedure, with a staff member assisting." width="976" height="650">
+      <figcaption>Laser vision correction in our laser suite.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="svc-promo" aria-labelledby="promo-title">
+  <div class="wrap">
+    <img class="svc-promo-art" src={withBase("assets/services/lasik-promo.webp")} alt="Chalkboard artwork reading &ldquo;New semester. New perspective. $600 off LASIK.&rdquo;" width="640" height="426" loading="lazy">
+    <div class="svc-promo-copy">
+      <p class="svc-promo-eyebrow">Current offer</p>
+      <h2 id="promo-title">$600 off LASIK</h2>
+      <p class="svc-promo-body">New semester, new perspective. Book your LASIK consultation before the end of the year.</p>
+      <p class="svc-promo-expires">Offer expires December 31, 2026.</p>
+      <AppointmentLink class="btn btn-primary">Schedule Appointment</AppointmentLink>
+      <p class="svc-promo-terms">Cannot be combined with any other offer or insurance. You must mention this offer to qualify.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-body" aria-labelledby="about-title">
+  <div class="wrap svc-split">
+    <div class="svc-main">
+      <h2 id="about-title">What is LASIK?</h2>
+      <p>Poor eyesight generally comes down to two things: an eyeball that is too long or too short, and a cornea that is too steep, too flat, or an irregular shape. Research has shown that changing the size and shape of the eyeball itself is impractical and ineffective, so laser vision correction works by reshaping the cornea instead.</p>
+      <p>Our team offers LASIK and other vision correction options to patients across the Joliet area. Call <a href="tel:+18157293777">(815) 729-3777</a> to book a LASIK consultation or any other eye care appointment.</p>
+      <h2>LASIK at Spectrum Eye Institute</h2>
+      <p>Our experienced team starts with a comprehensive consultation to understand your vision and talk through the best options for you. Our surgeons use a femtosecond laser system. Patients with nearsightedness, farsightedness and astigmatism can all benefit from LASIK.</p>
+    </div>
+    <aside class="svc-aside" aria-label="At a glance">
+      <h2 class="svc-aside-title">At a glance</h2>
+      <dl class="svc-facts">
+        <dt>Procedure</dt><dd>Outpatient, both eyes usually same day</dd>
+        <dt>Anesthetic</dt><dd>Numbing eye drops; a mild sedative if you want one</dd>
+        <dt>Laser time</dt><dd>About 30&ndash;60 seconds per eye</dd>
+        <dt>Going home</dt><dd>Bring a driver &mdash; you cannot drive yourself</dd>
+      </dl>
+      <AppointmentLink class="btn btn-primary">Schedule an Evaluation</AppointmentLink>
+    </aside>
+  </div>
+</section>
+
+<section class="section svc-lenses" aria-labelledby="b1-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="b1-title">What LASIK corrects</h2>
+      <p class="section-note">Your consultation will confirm whether LASIK is the right procedure for your eyes.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <h3>Nearsightedness</h3>
+        <p class="svc-tag">Myopia</p>
+        <p>Distant objects look blurry while close work stays clear. The laser flattens the central cornea slightly so distant light focuses on the retina instead of in front of it.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Farsightedness</h3>
+        <p class="svc-tag">Hyperopia</p>
+        <p>Close work is harder than distance vision. The laser steepens the central cornea so near light focuses on the retina rather than behind it.</p>
+      </article>
+      <article class="svc-card">
+        <h3>Astigmatism</h3>
+        <p class="svc-tag">Irregular corneal shape</p>
+        <p>An unevenly curved cornea blurs vision at every distance. The laser smooths that curvature, and astigmatism is often treated at the same time as nearsightedness or farsightedness.</p>
+      </article>
+      <article class="svc-card">
+        <h3>What LASIK will not do</h3>
+        <p class="svc-tag">Reading glasses</p>
+        <p>LASIK does not eliminate the need for reading glasses. Presbyopia &mdash; the age-related loss of near focus &mdash; continues regardless, and some patients still need an enhancement, glasses or contacts afterward.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-notes">
+  <div class="wrap">
+    <p class="svc-note"><strong>About results:</strong> outcomes vary from person to person, and the figures sometimes quoted for LASIK come from published studies rather than from our own patients. Your surgeon will give you a realistic picture of what LASIK can do for your eyes at your consultation.</p>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="wrap">
+    <h2>Find out if LASIK is right for you</h2>
+    <p>A consultation is the only way to know. Book online or call and we&rsquo;ll talk it through.</p>
+    <div class="cta-row">
+      <AppointmentLink class="btn btn-light btn-lg">Schedule Appointment</AppointmentLink>
+      <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+    </div>
+  </div>
+</section>
+
+<section class="section svc-faq-section" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Common questions</h2>
+    <div class="faq-list">
+      <details class="faq">
+        <summary><span>What actually happens during the procedure?</span></summary>
+        <div class="faq-body"><p>LASIK is done as an outpatient procedure. Numbing eye drops go in right before surgery, and a mild sedative is available if you are anxious. The eyelid is cleansed and held open with a small instrument, and the other eye is covered.</p><p>A thin, hinged flap is created in the surface of the cornea and folded back to expose the tissue underneath. The laser is then applied for roughly 30 to 60 seconds, depending on how much correction is needed, and the laser&rsquo;s computer calculates the exact number of pulses. You will hear a snapping sound and may notice a faint odor. The flap is then laid back in place without stitches, and antibiotic and anti-inflammatory drops are put in.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Will it hurt?</span></summary>
+        <div class="faq-body"><p>Most patients feel no discomfort during the procedure itself. There can be mild discomfort for the first few days afterward, sometimes helped by pain relief and artificial tears, but most people are comfortable throughout recovery.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>How soon will I see clearly?</span></summary>
+        <div class="faq-body"><p>Many patients notice a marked improvement almost immediately, but your best vision may take several days or weeks &mdash; occasionally months &mdash; to settle. Because of the blurriness and any sedative, you cannot drive yourself home, and surgery will not go ahead unless a driver is present or other arrangements are made.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>What does recovery involve?</span></summary>
+        <div class="faq-body"><p>You will be seen the day after surgery, then at about one week and one month, with extra visits if needed. The main thing to protect in the first one to two weeks is the flap: avoid rubbing your eyes, be careful of fingernails, and wear the protective shields we give you while you sleep for the first few nights.</p><p>Drops matter. Following the medication schedule closely lowers the risk of infection, keeps you comfortable and gives you the best visual result. Most patients only need them for a few weeks.</p></div>
+      </details>
+      <details class="faq">
+        <summary><span>Will I still need glasses?</span></summary>
+        <div class="faq-body"><p>Vision improves without glasses for the great majority of patients, but some still need an enhancement, glasses or contact lenses afterward. LASIK does not treat presbyopia, so reading glasses are still likely as you get older.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+</SiteLayout>
