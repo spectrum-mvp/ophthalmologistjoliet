@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import LocationCard from "../../components/LocationCard.astro";
+import Locations from "../../components/Locations.astro";
 import locations from "../../data/locations.json";
 
 const description = "Contact Spectrum Eye Institute in New Lenox and Joliet, IL. Addresses, phone numbers and directions for both offices. Call (815) 729-3777.";
@@ -43,9 +43,7 @@ const base = import.meta.env.BASE_URL;
           <p class="section-note">Hours vary by office &mdash; please call before your visit to confirm.</p>
         </div>
       </div>
-      <div class="locations">
-        {locations.map((location) => <LocationCard location={location} />)}
-      </div>
+      <Locations />
     </div>
   </main>
 

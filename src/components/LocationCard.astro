@@ -30,7 +30,7 @@ const mapEmbedUrl = decodeHtmlEntities(location.mapEmbedUrl);
       src={mapEmbedUrl}
       title={`Map of Spectrum Eye Institute, ${location.name} office`}
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
+      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
   </div>

@@ -1,0 +1,8 @@
+---
+import LocationCard from "./LocationCard.astro";
+import locations from "../data/locations.json";
+---
+
+<div class="locations">
+  {locations.map((location) => <LocationCard location={location} />)}
+</div>
