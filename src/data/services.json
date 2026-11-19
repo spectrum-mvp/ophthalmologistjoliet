@@ -1,0 +1,731 @@
+[
+  {
+    "slug": "cataract-surgery",
+    "navLabel": "Cataract Surgery",
+    "title": "Cataract Surgery | Spectrum Eye Institute",
+    "h1": "Cataract surgery",
+    "description": "Cataract surgery in New Lenox and Joliet, IL. Laser-assisted technique, monofocal, toric, multifocal and extended-depth-of-focus lens options. Call (815) 729-3777.",
+    "lede": "A cataract clouds the eye&rsquo;s natural lens and blurs your vision. Our surgeons remove that lens and replace it with a clear implant chosen around how you actually use your eyes &mdash; driving, reading, screens, or all three.",
+    "image": {
+      "file": "consultation.jpg",
+      "alt": "An ophthalmologist reviewing eye anatomy charts with a patient in an exam room at Spectrum Eye Institute.",
+      "caption": "Talking through the options at a pre-surgical consultation."
+    },
+    "atAGlance": [
+      {
+        "label": "Procedure",
+        "value": "Outpatient, one eye at a time"
+      },
+      {
+        "label": "Technique",
+        "value": "Femtosecond laser available; no-stitch, no-patch method"
+      },
+      {
+        "label": "Lens options",
+        "value": "Monofocal, toric, multifocal/trifocal, extended depth of focus"
+      },
+      {
+        "label": "Offices",
+        "value": "New Lenox &amp; Joliet"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "Cataract surgery at Spectrum Eye",
+        "paragraphs": [
+          "With the expert skills of our highly trained ophthalmologists, cataract treatment clears the clouded vision a cataract causes. During surgery the clouded natural lens is removed and replaced with an intraocular lens, or IOL.",
+          "Our physicians use the latest premium lens technology &mdash; PanOptix, Vivity and Toric. They have access to femtosecond lasers for cataract surgery and to ORA intraoperative measurement, and they use three-in-one drops from ImprimisRx. For patients who also have glaucoma, they can perform a goniotomy at the same time as cataract surgery, which treats both conditions in a single procedure."
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "Choosing your lens",
+        "paragraphs": [
+          "The lens you choose is the decision that shapes your vision afterward, and there is a lens for most lifestyles and needs. Your surgeon will walk through the options at your evaluation and recommend what suits your eyes and your day-to-day."
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Lens options",
+        "note": "Which lens is right for you depends on your eyes, your daily activities and your budget.",
+        "cards": [
+          {
+            "name": "Monofocal",
+            "tag": "Usually covered by insurance or Medicare",
+            "body": "Provides clear distance vision. You will likely still need glasses for reading, and possibly for distance as well. There is nothing wrong with choosing a monofocal lens &mdash; many of our patients do."
+          },
+          {
+            "name": "Toric",
+            "tag": "For astigmatism",
+            "body": "A foldable, single-piece lens implanted during cataract surgery to replace the clouded lens. Its design reduces or eliminates corneal astigmatism and significantly improves uncorrected distance vision &mdash; in one procedure, without additional surgery."
+          },
+          {
+            "name": "Multifocal &amp; trifocal",
+            "tag": "Near, intermediate and distance",
+            "body": "Most IOLs correct vision at a single distance. A multifocal or trifocal lens, such as the Clareon PanOptix&reg;, is designed to correct near, far and in between, giving you the best chance at freedom from glasses."
+          },
+          {
+            "name": "Extended depth of focus",
+            "tag": "Continuous range, fewer halos",
+            "body": "Lenses such as the Clareon Vivity&reg; use non-diffractive technology to create a continuous, extended range of vision in both bright and dim light, with fewer of the halos, starbursts and glare some patients report with diffractive multifocal lenses. A toric version is available if you also have astigmatism."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>About cost:</strong> Medicare and most insurers cover cataract surgery itself, but they generally cover only a standard monofocal lens. If you choose a premium lens to reduce your dependence on glasses, you pay the difference for the lens out of pocket. Financing is available through Alphaeon Credit &mdash; ask our team for details."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Ready to talk about cataract surgery?",
+      "body": "Book an evaluation at our New Lenox or Joliet office, or call and we&rsquo;ll find a time that works."
+    },
+    "faq": [
+      {
+        "q": "What is a cataract?",
+        "a": "<p>A cataract is a clouding of the natural lens of the eye. The lens is about the size of an M&amp;M and sits just behind the colored iris. At birth the lens is clear; over time it clouds and vision gets blurry. A cataract can progress until there is a complete loss of vision in the eye, and neither diet nor laser treatment will make a cataract go away. Cataract surgery can restore your vision long before the loss becomes significant enough to interfere with daily activities.</p>"
+      },
+      {
+        "q": "I have astigmatism. Do I have options?",
+        "a": "<p>Yes. About half the population is born with corneas shaped in a way that creates astigmatism, which normally means glasses or contact lenses for clear distance vision. A toric IOL can correct, or at least partially correct, naturally occurring corneal astigmatism, so you are less dependent on glasses for distance vision after cataract surgery.</p>"
+      },
+      {
+        "q": "What is presbyopia, and what are my choices?",
+        "a": "<p>Presbyopia is part of normal aging and happens to everyone. It is caused by the natural lens losing flexibility and the focusing muscle weakening, and it becomes noticeable around age 45 &mdash; the point at which most people start wearing reading glasses or bifocals.</p><p>A standard monofocal IOL does not treat presbyopia, so patients who choose one still need reading glasses afterward. Presbyopia-correcting lenses, such as multifocal and trifocal IOLs, allow most patients to see far away and up close without glasses.</p>"
+      },
+      {
+        "q": "Will I still need glasses after surgery?",
+        "a": "<p>That depends on the lens you choose. A monofocal lens gives clear distance vision, and you will likely still need glasses for reading. Premium lenses reduce how often you reach for glasses, but no lens guarantees you will never need them &mdash; many patients still prefer readers for small print or long stretches of reading.</p>"
+      },
+      {
+        "q": "What should I expect right after surgery?",
+        "a": "<p>A few things worth keeping in mind:</p><ul><li>Don&rsquo;t judge your vision until both eyes have been done. It is hard for your brain to reconcile the difference between the two eyes until they can work together.</li><li>You may notice glare and halos around lights. These usually improve within a few months.</li><li>Your range of vision will keep settling in over time. Have patience.</li></ul>"
+      },
+      {
+        "q": "Is everyone a candidate for a premium lens?",
+        "a": "<p>Your ophthalmologist will evaluate whether a premium lens is a good fit for you. An autoimmune condition or a history of eye infections may make one less suitable. Many patients with glaucoma and some macular conditions are still successfully implanted with extended-range lenses &mdash; it is a conversation to have at your evaluation.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "lasik",
+    "navLabel": "LASIK",
+    "title": "LASIK Eye Surgery | Spectrum Eye Institute",
+    "h1": "LASIK",
+    "description": "LASIK laser vision correction in New Lenox and Joliet, IL, for nearsightedness, farsightedness and astigmatism. Book a consultation or call (815) 729-3777.",
+    "lede": "LASIK reshapes the cornea so light focuses properly on the retina. It can correct nearsightedness, farsightedness and astigmatism &mdash; and for most people, sharply reduce how much they depend on glasses and contacts.",
+    "image": {
+      "file": "laser-suite.webp",
+      "alt": "A Spectrum Eye Institute surgeon at the microscope of an excimer laser during a laser vision correction procedure, with a staff member assisting.",
+      "caption": "Laser vision correction in our laser suite."
+    },
+    "atAGlance": [
+      {
+        "label": "Procedure",
+        "value": "Outpatient, both eyes usually same day"
+      },
+      {
+        "label": "Anesthetic",
+        "value": "Numbing eye drops; a mild sedative if you want one"
+      },
+      {
+        "label": "Laser time",
+        "value": "About 30&ndash;60 seconds per eye"
+      },
+      {
+        "label": "Going home",
+        "value": "Bring a driver &mdash; you cannot drive yourself"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "What is LASIK?",
+        "paragraphs": [
+          "Poor eyesight generally comes down to two things: an eyeball that is too long or too short, and a cornea that is too steep, too flat, or an irregular shape. Research has shown that changing the size and shape of the eyeball itself is impractical and ineffective, so laser vision correction works by reshaping the cornea instead.",
+          "Our team offers LASIK and other vision correction options to patients across the Joliet area. Call <a href=\"tel:+18157293777\">(815) 729-3777</a> to book a LASIK consultation or any other eye care appointment."
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "LASIK at Spectrum Eye Institute",
+        "paragraphs": [
+          "Our experienced team starts with a comprehensive consultation to understand your vision and talk through the best options for you. Our surgeons use a femtosecond laser system. Patients with nearsightedness, farsightedness and astigmatism can all benefit from LASIK."
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "What LASIK corrects",
+        "note": "Your consultation will confirm whether LASIK is the right procedure for your eyes.",
+        "cards": [
+          {
+            "name": "Nearsightedness",
+            "tag": "Myopia",
+            "body": "Distant objects look blurry while close work stays clear. The laser flattens the central cornea slightly so distant light focuses on the retina instead of in front of it."
+          },
+          {
+            "name": "Farsightedness",
+            "tag": "Hyperopia",
+            "body": "Close work is harder than distance vision. The laser steepens the central cornea so near light focuses on the retina rather than behind it."
+          },
+          {
+            "name": "Astigmatism",
+            "tag": "Irregular corneal shape",
+            "body": "An unevenly curved cornea blurs vision at every distance. The laser smooths that curvature, and astigmatism is often treated at the same time as nearsightedness or farsightedness."
+          },
+          {
+            "name": "What LASIK will not do",
+            "tag": "Reading glasses",
+            "body": "LASIK does not eliminate the need for reading glasses. Presbyopia &mdash; the age-related loss of near focus &mdash; continues regardless, and some patients still need an enhancement, glasses or contacts afterward."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>About results:</strong> outcomes vary from person to person, and the figures sometimes quoted for LASIK come from published studies rather than from our own patients. Your surgeon will give you a realistic picture of what LASIK can do for your eyes at your consultation."
+      }
+    ],
+    "promo": {
+      "image": "lasik-promo.webp",
+      "alt": "Chalkboard artwork reading &ldquo;New semester. New perspective. $600 off LASIK.&rdquo;",
+      "eyebrow": "Current offer",
+      "headline": "$600 off LASIK",
+      "body": "New semester, new perspective. Book your LASIK consultation before the end of the year.",
+      "expires": "Offer expires December 31, 2026.",
+      "terms": "Cannot be combined with any other offer or insurance. You must mention this offer to qualify."
+    },
+    "cta": {
+      "heading": "Find out if LASIK is right for you",
+      "body": "A consultation is the only way to know. Book online or call and we&rsquo;ll talk it through."
+    },
+    "faq": [
+      {
+        "q": "What actually happens during the procedure?",
+        "a": "<p>LASIK is done as an outpatient procedure. Numbing eye drops go in right before surgery, and a mild sedative is available if you are anxious. The eyelid is cleansed and held open with a small instrument, and the other eye is covered.</p><p>A thin, hinged flap is created in the surface of the cornea and folded back to expose the tissue underneath. The laser is then applied for roughly 30 to 60 seconds, depending on how much correction is needed, and the laser&rsquo;s computer calculates the exact number of pulses. You will hear a snapping sound and may notice a faint odor. The flap is then laid back in place without stitches, and antibiotic and anti-inflammatory drops are put in.</p>"
+      },
+      {
+        "q": "Will it hurt?",
+        "a": "<p>Most patients feel no discomfort during the procedure itself. There can be mild discomfort for the first few days afterward, sometimes helped by pain relief and artificial tears, but most people are comfortable throughout recovery.</p>"
+      },
+      {
+        "q": "How soon will I see clearly?",
+        "a": "<p>Many patients notice a marked improvement almost immediately, but your best vision may take several days or weeks &mdash; occasionally months &mdash; to settle. Because of the blurriness and any sedative, you cannot drive yourself home, and surgery will not go ahead unless a driver is present or other arrangements are made.</p>"
+      },
+      {
+        "q": "What does recovery involve?",
+        "a": "<p>You will be seen the day after surgery, then at about one week and one month, with extra visits if needed. The main thing to protect in the first one to two weeks is the flap: avoid rubbing your eyes, be careful of fingernails, and wear the protective shields we give you while you sleep for the first few nights.</p><p>Drops matter. Following the medication schedule closely lowers the risk of infection, keeps you comfortable and gives you the best visual result. Most patients only need them for a few weeks.</p>"
+      },
+      {
+        "q": "Will I still need glasses?",
+        "a": "<p>Vision improves without glasses for the great majority of patients, but some still need an enhancement, glasses or contact lenses afterward. LASIK does not treat presbyopia, so reading glasses are still likely as you get older.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "glaucoma",
+    "navLabel": "Glaucoma",
+    "title": "Glaucoma Diagnosis &amp; Treatment | Spectrum Eye Institute",
+    "h1": "Glaucoma",
+    "description": "Glaucoma testing and treatment in New Lenox and Joliet, IL. Glaucoma is painless and can damage vision before you notice. Book an exam or call (815) 729-3777.",
+    "lede": "Glaucoma damages the optic nerve, usually because of pressure inside the eye &mdash; and it does it painlessly, often before you notice any change in your vision. It is treatable, and the earlier it is caught, the more sight there is to protect.",
+    "image": {
+      "file": "slit-lamp-exam.jpg",
+      "alt": "An ophthalmologist examining a patient&rsquo;s eyes at a slit lamp in an exam room at Spectrum Eye Institute.",
+      "caption": "A dilated exam is how glaucoma is found."
+    },
+    "atAGlance": [
+      {
+        "label": "What it is",
+        "value": "Loss of optic nerve cells, usually from raised eye pressure"
+      },
+      {
+        "label": "Symptoms",
+        "value": "Usually none until vision is already affected"
+      },
+      {
+        "label": "How it is found",
+        "value": "A thorough dilated exam"
+      },
+      {
+        "label": "Outlook",
+        "value": "Treatable, but not curable &mdash; early detection matters"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "What glaucoma does",
+        "paragraphs": [
+          "Glaucoma is a group of conditions in which the optic nerve cells at the back of the eye die. This is usually caused by excessive pressure inside the eye, exerted by a fluid called aqueous humor. Those optic nerve cells are what turn the light entering your eye into signals your brain can understand, so as they slowly die, vision is lost.",
+          "High pressure inside the eye is not always dangerous. In susceptible people, though, it begins to damage the optic nerve &mdash; and because glaucoma is painless, it can cause permanent damage long before you notice any difference in your sight. Glaucoma is treatable, but at this time there is no cure, so what is lost cannot be recovered."
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "How we test for it",
+        "paragraphs": [
+          "A thorough dilated examination is what finds glaucoma. It takes into account the pressure inside your eye, your family background, your visual field and the condition of the optic nerve itself, and together those let our doctors assess whether glaucoma is present."
+        ]
+      },
+      {
+        "type": "checklist",
+        "heading": "Who is more likely to develop glaucoma",
+        "intro": "You are at higher risk if you:",
+        "items": [
+          "are related to someone with glaucoma",
+          "have diabetes",
+          "have high blood pressure",
+          "are taking steroid medications",
+          "are over the age of 50",
+          "are of African descent"
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>If any of these apply to you,</strong> an eye exam is worth booking even if your vision seems fine &mdash; that is exactly when glaucoma is easiest to treat. Call <a href=\"tel:+18157293777\">(815) 729-3777</a> to arrange one at either office."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Book a glaucoma exam",
+      "body": "Glaucoma gives no warning, so testing is the only way to catch it early. We&rsquo;ll find you a time."
+    },
+    "faq": [
+      {
+        "q": "Are there any symptoms?",
+        "a": "<p>Usually not, and that is what makes glaucoma dangerous. It is a painless disease that can cause permanent damage before you ever notice a difference in your vision. By the time most people see a change, nerve cells have already been lost.</p>"
+      },
+      {
+        "q": "How is glaucoma diagnosed?",
+        "a": "<p>With a thorough dilated examination. We measure the pressure inside the eye, look at the condition of the optic nerve, test your visual field and take your family history into account. No single one of those tells the whole story, which is why the full exam matters.</p>"
+      },
+      {
+        "q": "Can glaucoma be cured?",
+        "a": "<p>No. Glaucoma is treatable, but at this time there is no cure, and vision already lost does not come back. Treatment is about protecting the sight you still have, which is why finding it early makes such a difference.</p>"
+      },
+      {
+        "q": "I have cataracts as well. Can both be treated?",
+        "a": "<p>Often, yes. Our surgeons can perform a goniotomy at the same time as cataract surgery for patients who have both conditions, treating them in a single procedure. Your surgeon will tell you whether that is an option for your eyes.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "diabetic-retinopathy",
+    "navLabel": "Diabetic Retinopathy",
+    "title": "Diabetic Retinopathy | Spectrum Eye Institute",
+    "h1": "Diabetic retinopathy",
+    "description": "Diabetic retinopathy screening and treatment in New Lenox and Joliet, IL. A yearly dilated eye exam protects sight. Call (815) 729-3777.",
+    "lede": "Diabetic retinopathy is a common complication of diabetes and the leading cause of blindness among working-age Americans. It is not painful, and it often causes no symptoms until real damage has been done &mdash; which is why a yearly eye exam matters so much.",
+    "image": null,
+    "atAGlance": [
+      {
+        "label": "What it is",
+        "value": "Damage to the small blood vessels in the retina"
+      },
+      {
+        "label": "Symptoms",
+        "value": "Often none in the early stages"
+      },
+      {
+        "label": "Who is at risk",
+        "value": "Anyone with diabetes; risk rises the longer you have had it"
+      },
+      {
+        "label": "Screening",
+        "value": "A dilated eye exam every year"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "What diabetic retinopathy is",
+        "paragraphs": [
+          "Diabetic retinopathy is an eye disease affecting the retina, and a frequent complication of diabetes. Diabetes damages the small blood vessels in the retina, which can lead to poor vision and even blindness.",
+          "In the early stages, the tiny blood vessels in the eye weaken and develop small bulges that may burst and leak into the retina and into the gel-like fluid inside the eye, called the vitreous. As the condition progresses, fragile new blood vessels grow on the surface of the retina and impair vision. That later stage is called proliferative retinopathy.",
+          "Although diabetic retinopathy is not painful, it can severely damage your vision. If the earlier forms lead to swelling at the center of the retina, you may struggle with close work such as reading, or notice a gradual blurring. If the abnormal vessels bleed, vision can become spotty or hazy, or disappear altogether."
+        ]
+      },
+      {
+        "type": "checklist",
+        "heading": "Symptoms to call us about",
+        "intro": "It is possible to have diabetic retinopathy for a long time without noticing anything. If any of these appear for the first time or get worse, call your doctor immediately:",
+        "items": [
+          "Blurred or distorted vision, or difficulty reading",
+          "Floaters or flashes of light in your field of vision",
+          "Partial or total loss of vision, or a shadow or veil across your field of vision",
+          "Pain in the eye"
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "Who it affects",
+        "paragraphs": [
+          "Risk depends largely on two things: how long you have had diabetes, and which type you have. The longer you have had diabetes, the more likely you are to develop retinopathy, and people with Type 1 (juvenile onset) are more likely to develop it than people with Type 2 (adult onset)."
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Protecting your sight",
+        "note": "Most vision loss from diabetic retinopathy is preventable, and nearly all of that comes down to catching it early.",
+        "cards": [
+          {
+            "name": "Keep levels near normal",
+            "tag": "Blood sugar and blood pressure",
+            "body": "Keeping blood sugar and blood pressure close to normal slows the progress of retinopathy and helps prevent vision loss. It is the single biggest thing within your control."
+          },
+          {
+            "name": "Get a yearly exam",
+            "tag": "Dilated, by an eye specialist",
+            "body": "Screening does not prevent diabetic eye disease, but it catches it early enough to treat &mdash; which is what prevents the vision loss. Once a year, every year."
+          },
+          {
+            "name": "Don&rsquo;t wait on changes",
+            "tag": "Call us the same day",
+            "body": "Floaters, flashes of light, pain or pressure in the eye, blurry or double vision can all signal serious damage to the retina. The sooner it is treated, the more effective treatment is."
+          },
+          {
+            "name": "Treatment options",
+            "tag": "Laser and surgery",
+            "body": "There is no cure, but laser treatment (photocoagulation) is very effective at preventing vision loss when it is done before the retina is severely damaged. Surgical removal of the vitreous gel can also help in some cases."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>Retina care at Spectrum Eye:</strong> diabetic retinopathy is managed by our retina specialist. See <a href=\"../doctors/\">our doctors</a> for who you would be seeing, or call <a href=\"tel:+18157293777\">(815) 729-3777</a> to book."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Book your diabetic eye exam",
+      "body": "If you have diabetes, a dilated exam once a year is the best protection your sight has."
+    },
+    "faq": [
+      {
+        "q": "I feel fine. Do I really need a yearly exam?",
+        "a": "<p>Yes. Diabetic retinopathy typically causes no noticeable symptoms until significant damage has occurred and complications have developed. A yearly dilated exam is how it gets caught while treatment still works well.</p>"
+      },
+      {
+        "q": "What are the early stages called?",
+        "a": "<p>The early forms are called non-proliferative or background retinopathy. If either leads to swelling at the macula &mdash; the center of the retina &mdash; you may have difficulty with up-close work such as reading, or notice a gradual blurring.</p>"
+      },
+      {
+        "q": "Can diabetic retinopathy be cured?",
+        "a": "<p>No, there is no cure. Laser treatment (photocoagulation) can be very effective at preventing further vision loss if it is done before the retina has been severely damaged, and surgical removal of the vitreous gel may also help improve vision in some cases.</p>"
+      },
+      {
+        "q": "Does Type 1 or Type 2 diabetes carry more risk?",
+        "a": "<p>People with Type 1 diabetes (juvenile onset) are more likely to develop diabetic retinopathy than people with Type 2 (adult onset). For both, the longer you have had diabetes, the higher the risk.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "corneal-transplant",
+    "navLabel": "Corneal Transplant",
+    "title": "Corneal Transplant Surgery | Spectrum Eye Institute",
+    "h1": "Corneal transplant",
+    "description": "Corneal transplant surgery in New Lenox and Joliet, IL, with fellowship-trained cornea surgeons. Book an evaluation or call (815) 729-3777.",
+    "lede": "The cornea is the clear front window of the eye. When disease, injury or scarring clouds or distorts it, glasses and contact lenses can only do so much &mdash; and replacing the damaged tissue becomes the way to restore sight.",
+    "image": {
+      "file": "eye-model-consult.webp",
+      "alt": "A clinician using an anatomical model of the eye to explain its structure to a patient.",
+      "caption": "We&rsquo;ll walk you through what is happening in your eye, in plain terms."
+    },
+    "atAGlance": [
+      {
+        "label": "Procedure",
+        "value": "Replacing damaged corneal tissue with healthy donor tissue"
+      },
+      {
+        "label": "Our surgeons",
+        "value": "Two fellowship-trained cornea specialists"
+      },
+      {
+        "label": "Offices",
+        "value": "New Lenox &amp; Joliet"
+      },
+      {
+        "label": "First step",
+        "value": "A full evaluation of your cornea"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "Cornea care at Spectrum Eye Institute",
+        "paragraphs": [
+          "Corneal transplant surgery is performed here by two of our partners, both fellowship-trained in cornea.",
+          "<strong>Dr. Majid Rassouli, DO</strong> completed his Cornea and Refractive Surgery Fellowship in 2003 at the University of Illinois, Chicago, and specializes in cataract surgery and cornea transplants.",
+          "<strong>Dr. Samra Hashmi, MD</strong> completed her Fellowship in Refractive Surgery and Cornea in 2003 at the Cole Eye Institute, Cleveland Clinic Foundation, following a research fellowship in Cornea and External Diseases at the New York Eye and Ear Infirmary. She specializes in intraocular lens implant surgery, corneal transplant surgery and laser vision correction.",
+          "You can read more about both on <a href=\"../doctors/\">our doctors</a> page."
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "Why the cornea matters",
+        "paragraphs": [
+          "The cornea is where light first enters the front of the eye, and it provides about two thirds of the eye&rsquo;s focusing power &mdash; the lens inside the eye provides the other third. That is why damage to the cornea affects vision so directly, and why clouding or distortion there often cannot be corrected with glasses or contact lenses alone.",
+          "A corneal transplant replaces damaged corneal tissue with healthy donor tissue. There is more than one surgical approach, and which one suits you depends on which layers of your cornea are affected. Your surgeon will examine your eye, explain the options in plain terms and recommend the approach that fits your cornea."
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>Not sure whether this applies to you?</strong> Most people come to us because their vision has become cloudy or distorted and glasses are no longer helping, or because another doctor has referred them. Either way, an evaluation is the starting point. Call <a href=\"tel:+18157293777\">(815) 729-3777</a> and we&rsquo;ll arrange one."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Talk to a cornea specialist",
+      "body": "Book an evaluation at our New Lenox or Joliet office, or call and we&rsquo;ll find a time."
+    },
+    "faq": [
+      {
+        "q": "How do I know if I need a corneal transplant?",
+        "a": "<p>You don&rsquo;t need to know &mdash; that is what the evaluation is for. Your surgeon will examine the cornea, establish what is causing the loss of vision and tell you whether a transplant is the right answer or whether something less involved would help.</p>"
+      },
+      {
+        "q": "Who would perform my surgery?",
+        "a": "<p>Dr. Majid Rassouli or Dr. Samra Hashmi, both of whom completed cornea fellowships in 2003 and have performed this surgery throughout their careers. You can read their full backgrounds on <a href=\"../doctors/\">our doctors</a> page.</p>"
+      },
+      {
+        "q": "Can glasses or contact lenses fix it instead?",
+        "a": "<p>Sometimes, and that is always worth establishing first. Because the cornea does about two thirds of the eye&rsquo;s focusing, though, clouding or scarring there often cannot be corrected optically &mdash; the problem is the clarity of the tissue itself, not the prescription.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "comprehensive-eye-care",
+    "navLabel": "Comprehensive Eye Care",
+    "title": "Comprehensive Eye Care | Spectrum Eye Institute",
+    "h1": "Comprehensive eye care",
+    "description": "Routine eye exams through to surgical care in New Lenox and Joliet, IL, coordinated with your optometrist. Book an appointment or call (815) 729-3777.",
+    "lede": "Routine eye examinations through to surgery, under one roof &mdash; and coordinated with the optometrist you already see. Most problems we treat are easier to deal with when they are found early, which is what a regular exam is for.",
+    "image": {
+      "file": "eye-exam.webp",
+      "alt": "An ophthalmologist examining a patient&rsquo;s eyes at a slit lamp during a routine eye exam.",
+      "caption": "A full examination is the foundation of everything else we do."
+    },
+    "atAGlance": [
+      {
+        "label": "Services",
+        "value": "Routine exams through to surgical care"
+      },
+      {
+        "label": "Coordination",
+        "value": "We work alongside your optometrist"
+      },
+      {
+        "label": "Arrive",
+        "value": "15 minutes before your appointment"
+      },
+      {
+        "label": "Bring",
+        "value": "Insurance card, referral if required, medication list"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "Care at Spectrum Eye Institute",
+        "paragraphs": [
+          "The professional and administrative staff at Spectrum Eye Institute strive to provide our patients with the best in medical and surgical services. Our refractive surgeons work closely with your optometrist in a coordinated effort to achieve the best possible outcome for you.",
+          "We offer state-of-the-art testing to get the most out of the vision available to you. Using the latest technology, we can detect possible problems before you experience any loss of vision or discomfort &mdash; which is the whole point of coming in before something feels wrong."
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Examinations and surgeries",
+        "note": "Patient services include routine eye examinations, cataract, glaucoma, oculoplastic, laser and refractive surgeries.",
+        "cards": [
+          {
+            "name": "Routine eye examinations",
+            "tag": "Where most care starts",
+            "body": "A full examination checks how well you see, how healthy the eye is, and whether anything is developing quietly in the background. If you have a history of eye disease, we will tell you how often to come back."
+          },
+          {
+            "name": "Cataract &amp; lens surgery",
+            "tag": "Clouded lens, replaced",
+            "body": "When a cataract clouds the eye&rsquo;s natural lens, we replace it with a clear implant chosen around how you use your eyes. <a href=\"../cataract-surgery/\">More on cataract surgery</a>."
+          },
+          {
+            "name": "Glaucoma care",
+            "tag": "Testing and treatment",
+            "body": "Glaucoma is painless and gives no warning, so testing is how it gets caught. <a href=\"../glaucoma/\">More on glaucoma</a>."
+          },
+          {
+            "name": "Laser &amp; refractive surgery",
+            "tag": "Reducing your prescription",
+            "body": "LASIK and related procedures reshape the cornea to correct nearsightedness, farsightedness and astigmatism. <a href=\"../lasik/\">More on LASIK</a>."
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "heading": "Before your appointment",
+        "intro": "A few things to have ready, so your visit runs smoothly:",
+        "items": [
+          "Arrive 15 minutes before your appointment time",
+          "Bring your completed forms and your insurance cards",
+          "If your insurance requires a referral from your primary care physician, bring it with you",
+          "Bring a list of any medications you are currently taking",
+          "Expect that your eyes may be dilated &mdash; consider arranging a driver"
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>Need the patient forms?</strong> You&rsquo;ll find them on our <a href=\"../patient-info/#forms\">Patient Info</a> page, or call <a href=\"tel:+18157293777\">(815) 729-3777</a> and our team will get them to you before your visit."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Book an eye exam",
+      "body": "Whether it has been a year or rather longer, we&rsquo;ll find you a time at New Lenox or Joliet."
+    },
+    "faq": [
+      {
+        "q": "How often should I visit my ophthalmologist?",
+        "a": "<p>If you have a history of eye disease, we recommend making regular appointments and following up as your ophthalmologist advises. Call for more information or to schedule an appointment.</p>"
+      },
+      {
+        "q": "How do I know if I should schedule an appointment?",
+        "a": "<p>If you are having eye discomfort or trouble with your vision, schedule an appointment. Health conditions such as high blood pressure or diabetes also increase your risk for certain eye diseases. If you have questions or think you might need to be seen, call us.</p>"
+      },
+      {
+        "q": "What should I bring?",
+        "a": "<p>Your insurance information, any referral from your primary care physician if you have not already sent it to us, and a list of all medications you are taking.</p>"
+      },
+      {
+        "q": "Can I bring someone with me?",
+        "a": "<p>Always. An extra set of ears is helpful so you don&rsquo;t forget anything important your ophthalmologist goes over with you &mdash; and if your eyes are dilated, you may be glad of the company on the way home.</p>"
+      },
+      {
+        "q": "Any tips for protecting my eyes?",
+        "a": "<p>Wear protective eyewear for things like mowing the grass, construction work and sports. If you wear contacts, take steps to prevent eye infections: wash your hands before handling them or touching your eyes, and replace them as directed.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "retina-conditions",
+    "navLabel": "Retina Conditions",
+    "title": "Retina Conditions &amp; Treatment | Spectrum Eye Institute",
+    "h1": "Retina conditions",
+    "description": "Retina care in New Lenox and Joliet, IL. Macular degeneration, retinal tears and detachment, flashes and floaters, diabetic retinopathy. Call (815) 729-3777.",
+    "lede": "The retina is the thin, light-sensitive tissue lining the back of the eye. It turns light into the signals your brain reads as sight &mdash; so when something goes wrong there, vision is affected directly, and often quickly.",
+    "image": {
+      "file": "active-senior-woman.webp",
+      "alt": "A smiling woman stretching on a bench outdoors in a park on a sunny day.",
+      "caption": "Most retina conditions are manageable when they are caught early."
+    },
+    "atAGlance": [
+      {
+        "label": "What it is",
+        "value": "The light-sensitive tissue lining the back of the eye"
+      },
+      {
+        "label": "Urgency",
+        "value": "Sudden flashes, floaters or a shadow in your vision need same-day attention"
+      },
+      {
+        "label": "Our specialist",
+        "value": "A fellowship-trained retina surgeon"
+      },
+      {
+        "label": "Screening",
+        "value": "A dilated exam, yearly if you have diabetes"
+      }
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "heading": "Why the retina matters",
+        "paragraphs": [
+          "The retina lines the inner surface of the eye and covers more than half of the back of it. Light passing through the cornea and lens lands there, where it is converted into nerve impulses and sent along the optic nerve to the brain. That is how seeing actually happens.",
+          "Because the retina does that job alone, damage to it shows up as lost vision rather than a blurry prescription. Left untreated, retina problems tend to get worse rather than settle, which is why they are worth acting on early."
+        ]
+      },
+      {
+        "type": "prose",
+        "heading": "Retina care at Spectrum Eye Institute",
+        "paragraphs": [
+          "<strong>Dr. Ankit Desai, MD</strong> is our retina specialist. He is a board-certified ophthalmologist specializing in the medical and surgical treatment of vitreoretinal and macular diseases, and completed a two-year surgical fellowship in vitreoretinal disease at Henry Ford Hospital. He sees patients at our Joliet and New Lenox offices. You can read his full background on <a href=\"../doctors/\">our doctors</a> page.",
+          "What treatment looks like depends entirely on which condition you have and how far along it is. Your evaluation starts with a dilated examination of the retina, and Dr. Desai will explain what he finds and what the options are in plain terms."
+        ]
+      },
+      {
+        "type": "checklist",
+        "heading": "Symptoms that need a retina evaluation",
+        "intro": "Call us if you notice any of the following, and call the same day if they come on suddenly:",
+        "items": [
+          "A sudden appearance of black spots",
+          "An increased number of floaters",
+          "Flashes of light",
+          "An increased number of blind spots",
+          "Shapes looking distorted or bent",
+          "Dim or blurred vision",
+          "Shadowy peripheral vision, or a curtain across your field of view",
+          "Loss of peripheral vision"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Conditions we treat",
+        "note": "These are the retina problems we see most often. Each one is diagnosed with a dilated exam.",
+        "cards": [
+          {
+            "name": "Macular degeneration",
+            "tag": "Central vision",
+            "body": "The macula is the part of the retina responsible for central vision. When it breaks down, reading and driving become difficult, though peripheral vision remains intact, so it does not lead to total blindness. The &ldquo;dry&rdquo; form is more common and progresses gradually; the &ldquo;wet&rdquo; form is less common, caused by abnormal blood vessels leaking under the retina, and can take vision much faster. Dry can turn into wet, which is why monitoring matters."
+          },
+          {
+            "name": "Retinal tears &amp; detachment",
+            "tag": "Treat urgently",
+            "body": "With age, the vitreous gel inside the eye shrinks and can pull away from the retina. If it pulls hard enough the retina tears, and a tear can progress to a detachment &mdash; the retina separating from the back of the eye. There is no pain, which is what makes it dangerous; the warning signs are flashes, floaters, or a shadow moving across your vision. Treated early, vision is usually preserved."
+          },
+          {
+            "name": "Flashes &amp; floaters",
+            "tag": "Common, occasionally serious",
+            "body": "Floaters are small spots or strands drifting across your vision, most noticeable against a bright background. They are usually protein deposits in the vitreous and are a normal part of aging. But roughly one in ten people with a sudden onset of prominent floaters or flashes turns out to have a retinal tear, so a sudden change is always worth a dilated exam rather than a wait-and-see."
+          },
+          {
+            "name": "Diabetic retinopathy",
+            "tag": "If you have diabetes",
+            "body": "Diabetes damages the small blood vessels of the retina, and it is the leading cause of blindness among working-age Americans. It typically causes no symptoms until real damage has been done, which is why a yearly dilated exam matters so much. <a href=\"../diabetic-retinopathy/\">More on diabetic retinopathy</a>."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "html": "<strong>A sudden change is not something to sleep on.</strong> New flashes, a shower of floaters, or a shadow or curtain across your vision can be the first sign of a retinal tear or detachment. Call <a href=\"tel:+18157293777\">(815) 729-3777</a> and tell our team what you are seeing &mdash; we will get you in."
+      }
+    ],
+    "promo": null,
+    "cta": {
+      "heading": "Book a retina evaluation",
+      "body": "If something has changed in your vision, we&rsquo;ll take a proper look. Book online or call and we&rsquo;ll find you a time."
+    },
+    "faq": [
+      {
+        "q": "What is the difference between dry and wet macular degeneration?",
+        "a": "<p>Dry is far more common. Vision loss is usually gradual, caused by thinning of the tissues of the macula with age. Wet is less common but can take vision much more quickly: abnormal blood vessels form in the retina and leak fluid or blood. Dry can progress to wet, sometimes rapidly, so changes are worth reporting promptly rather than at your next routine visit.</p>"
+      },
+      {
+        "q": "Are flashes and floaters an emergency?",
+        "a": "<p>Usually not, but a sudden onset deserves a same-day call. Most floaters are an ordinary part of the vitreous gel aging. However, about one in ten people who suddenly develop prominent floaters or light flashes are found to have a retinal tear &mdash; and a tear caught early is a much smaller problem than a detachment caught late. A dilated exam is what tells the two apart.</p>"
+      },
+      {
+        "q": "How is the retina examined?",
+        "a": "<p>With a dilated examination. Drops widen the pupil so the retina can be seen properly all the way to its edges. Plan for your vision to be blurry and light-sensitive for a few hours afterward, and consider arranging a driver.</p>"
+      },
+      {
+        "q": "Can vision that has already been lost be restored?",
+        "a": "<p>Usually not. Most retina treatment is aimed at protecting the vision you still have and stopping the condition progressing, which is the honest reason we keep stressing early detection. What is possible in your case is a conversation to have with Dr. Desai once he has examined your eyes.</p>"
+      },
+      {
+        "q": "Do I need a referral?",
+        "a": "<p>No. Many patients are referred by their optometrist or primary care physician, but you can call us directly. If your insurance requires a referral, bring it with you.</p>"
+      }
+    ]
+  }
+]

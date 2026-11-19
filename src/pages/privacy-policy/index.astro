@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import source from "../../content/privacy-policy.html?raw";
+import { extractProseArticle } from "../../utils/html";
+
+const prose = extractProseArticle(source, "privacy-policy/index.html");
+---
+
+<BaseLayout
+  title="Privacy Policy | Spectrum Eye Institute"
+  description="Notice of Privacy Practices describing how your medical information may be used and disclosed and how you can get access to it."
+  canonicalPath="/privacy-policy/"
+  currentPath={`${import.meta.env.BASE_URL}privacy-policy/`}
+>
+  <main id="main" class="page">
+    <div class="wrap"><article class="prose" set:html={prose} /></div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,88 @@
+---
+import GoogleTagManager from "../components/GoogleTagManager.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import { decodeHtmlEntities } from "../utils/html";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  currentPath?: string;
+  robots?: string;
+  jsonLd?: Record<string, unknown>[];
+  refresh?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalPath,
+  currentPath = Astro.url.pathname,
+  robots = "index, follow",
+  jsonLd = [],
+  refresh,
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+const canonicalUrl = new URL(canonicalPath, Astro.site).toString();
+const safeJsonLd = (schema: Record<string, unknown>) => JSON.stringify(schema).replace(/</g, "\\u003c");
+const pageTitle = decodeHtmlEntities(title);
+const pageDescription = decodeHtmlEntities(description);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="robots" content={robots} />
+    {refresh && <meta http-equiv="refresh" content={refresh} />}
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Spectrum Eye Institute" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="https://www.ophthalmologistjoliet.com/assets/icon-512.png" />
+    <meta name="theme-color" content="#3853a4" />
+    <link rel="icon" type="image/png" sizes="32x32" href={`${base}assets/favicon-32.png`} />
+    <link rel="icon" type="image/png" sizes="512x512" href={`${base}assets/icon-512.png`} />
+    <link rel="apple-touch-icon" href={`${base}assets/apple-touch-icon.png`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href={`${base}assets/site.css`} />
+    <style is:inline>
+      /* Reusable external-link icon; drawn as a mask so it takes the button's text color. */
+      :root {
+        --icon-external: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.2929 9.70708c.286.28599.7161.37152 1.0898.21677.3737-.15478.6173-.51942.6173-.92388v-6c0-.55229-.4477-1-1-1h-6c-.4045 0-.7691.24364-.9239.61732-.1548.37367-.0692.80379.2168 1.08979l1.9393 1.93933-6.64646 6.64649c-.39052.3905-.39052 1.0237 0 1.4142l.70706.7071c.3906.3906 1.0237.3906 1.4143 0l6.6465-6.64646z'/%3E%3Cpath fill='%23000' d='M4.5 8.00006c0-.27614.22386-.5.5-.5h5.0625c.5523 0 1-.44772 1-1v-1c0-.55229-.4477-1-1-1H5c-1.933 0-3.5 1.567-3.5 3.5V19.0001c0 1.933 1.567 3.5 3.5 3.5h11c1.933 0 3.5-1.567 3.5-3.5v-5.0625c0-.5523-.4477-1-1-1h-1c-.5523 0-1 .4477-1 1v5.0625c0 .2761-.2239.5-.5.5H5c-.27614 0-.5-.2239-.5-.5z'/%3E%3C/svg%3E");
+      }
+      .btn[href^="https://s.odoro.com/"]::after {
+        content: "";
+        flex: none;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-bottom: 2px;
+        background-color: currentColor;
+        -webkit-mask: var(--icon-external) center / contain no-repeat;
+        mask: var(--icon-external) center / contain no-repeat;
+      }
+    </style>
+    {jsonLd.map((schema) => <script type="application/ld+json" set:html={safeJsonLd(schema)} />)}
+    <GoogleTagManager />
+  </head>
+  <body>
+    <GoogleTagManager noscript />
+    <a class="skip" href="#main">Skip to main content</a>
+    <SiteHeader currentPath={currentPath} />
+    <slot />
+    <SiteFooter />
+    <script src={`${base}assets/nav.js`} defer></script>
+    <script src={`${base}assets/header.js`} defer></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import patientInfo from "../../data/patient-info.json";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Patient Info | Spectrum Eye Institute"
+  description="What to expect at your visit, how billing and insurance work, and how to get ready for your appointment at Spectrum Eye Institute."
+  canonicalPath="/patient-info/"
+  currentPath={`${base}patient-info/`}
+>
+  <main id="main">
+    <section class="svc-hero">
+      <div class="wrap">
+        <div class="svc-hero-copy">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href={base}>Home</a><span aria-hidden="true">/</span><span aria-current="page">Patient Info</span></nav>
+          <h1>Patient information</h1>
+          <p class="lede">What to expect at your visit, how billing and insurance work, and the forms you can fill out before you arrive.</p>
+          <ul class="jump-links" aria-label="On this page">
+            <li><a href="#what-to-expect">What to expect</a></li>
+            <li><a href="#forms">Forms &amp; documents</a></li>
+            <li><a href="#billing">Billing information</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section svc-listing pi-section" id="what-to-expect" aria-labelledby="expect-title">
+      <div class="wrap">
+        <h2 id="expect-title">What to expect</h2>
+        <p class="svc-list-intro">A few things to have ready, so your visit runs smoothly:</p>
+        <ul class="svc-checklist">
+          {patientInfo.whatToExpect.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section svc-lenses" aria-labelledby="expect-more-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="expect-more-title">Good to know</h2>
+          <p class="section-note">Questions before your visit? Call <a href="tel:+18157293777">(815) 729-3777</a>.</p>
+        </div>
+        <div class="svc-grid">
+          {patientInfo.goodToKnow.map((card) => (
+            <article class="svc-card">
+              <h3>{card.name}</h3>
+              <p class="svc-tag" set:html={card.tag} />
+              <p set:html={card.body} />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section pi-forms pi-section" id="forms" aria-labelledby="forms-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="forms-title">Forms &amp; documents</h2>
+          <p class="section-note">Download the forms and documents you need before your visit.</p>
+        </div>
+        <ul class="form-list">
+          {patientInfo.forms.map((form) => (
+            <li>
+              <a href={`${base}assets/${form.file}`} download={form.file} aria-label={`Download ${form.name} (${form.type})`}>
+                <svg class={form.type === "PDF" ? "form-icon-pdf" : "form-icon-doc"} width="32" height="40" viewBox="0 0 32 40" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M5 1h14l8 8v30H5z" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                  <path d="M19 1v8h8" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                  <rect x="2" y="21" width="27" height="12" rx="2" fill="currentColor" />
+                  <text x="15.5" y="30" fill="#fff" font-family="Arial, sans-serif" font-size="8" font-weight="700" text-anchor="middle">{form.type === "PDF" ? "PDF" : "W"}</text>
+                </svg>
+                <span>{form.name}</span>
+                <span class="form-type">{form.type}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p>Our <a href={`${base}privacy-policy/`}>Notice of Privacy Practices</a> is available online.</p>
+      </div>
+    </section>
+
+    <section class="section svc-lenses pi-section" id="billing" aria-labelledby="billing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="billing-title">Billing information</h2>
+          <p class="section-note">Questions about a bill or your coverage? Call <a href="tel:+18157293777">(815) 729-3777</a>.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card">
+            <h3>Insurance</h3>
+            <p class="svc-tag">We bill your plan for you</p>
+            <p class="svc-card-body">We accept many insurance plans, including conventional, PPO and HMO plans, and our insurance department bills your insurance on your behalf.</p>
+            <p>Our doctors accept Medicare assignment. Please bring your insurance cards to every visit.</p>
+          </article>
+          <article class="svc-card">
+            <h3>Payment &amp; financing</h3>
+            <p class="svc-tag">Options for every budget</p>
+            <p class="svc-card-body">Cost shouldn&rsquo;t keep you from the eye care you need, including LASIK. We accept:</p>
+            <ul class="pay-list">
+              <li>Cash or check</li>
+              <li>Visa, MasterCard and Discover</li>
+              <li>CareCredit</li>
+              <li>Alphaeon Credit</li>
+            </ul>
+          </article>
+        </div>
+        <p class="svc-note"><strong>Paying without insurance?</strong> You have the right to a Good Faith Estimate of your expected charges. See our <a href={`${base}no-surprise-billing-act/`}>No Surprise Billing Act</a> notice for details.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

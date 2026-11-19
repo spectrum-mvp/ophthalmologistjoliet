@@ -1,0 +1,20 @@
+[
+  {
+    "name": "New Lenox",
+    "street": "672 Cedar Crossings Dr",
+    "cityStateZip": "New Lenox, IL 60451",
+    "tel": "+18157231854",
+    "telDisplay": "(815) 723-1854",
+    "directionsUrl": "https://maps.app.goo.gl/Cz8gzgELLLHvJnkx9",
+    "mapEmbedUrl": "https://www.google.com/maps?q=672+Cedar+Crossings+Dr%2C+New+Lenox%2C+IL+60451&amp;output=embed"
+  },
+  {
+    "name": "Joliet",
+    "street": "963 129th Infantry Dr, Ste 110",
+    "cityStateZip": "Joliet, IL 60435",
+    "tel": "+18157293777",
+    "telDisplay": "(815) 729-3777",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&amp;destination=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435",
+    "mapEmbedUrl": "https://www.google.com/maps?q=963+129th+Infantry+Dr+Ste+110%2C+Joliet%2C+IL+60435&amp;output=embed"
+  }
+]

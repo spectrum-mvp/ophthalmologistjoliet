@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ServicePage from "../components/ServicePage.astro";
+import availability from "../content/legal/notice-of-availability.html?raw";
+import nondiscrimination from "../content/legal/notice-of-nondiscrimination.html?raw";
+import billing from "../content/legal/no-surprise-billing-act.html?raw";
+import { services } from "../data/services";
+import { extractProseArticle } from "../utils/html";
+
+export function getStaticPaths() {
+  const notices = [
+    {
+      slug: "no-surprise-billing-act",
+      title: "No Surprise Billing Act | Spectrum Eye Institute",
+      description: "Learn about your right to a Good Faith Estimate of expected charges under the No Surprises Act.",
+      html: billing,
+    },
+    {
+      slug: "notice-of-nondiscrimination",
+      title: "Notice of Nondiscrimination | Spectrum Eye Institute",
+      description: "Midwest Vision Partners' notice of nondiscrimination and how to file a grievance.",
+      html: nondiscrimination,
+    },
+    {
+      slug: "notice-of-availability",
+      title: "Notice of Availability | Spectrum Eye Institute",
+      description: "Free language assistance and accessibility services are available to patients.",
+      html: availability,
+    },
+  ];
+
+  return [
+    ...services.map((service) => ({
+      params: { slug: service.slug },
+      props: { service },
+    })),
+    ...notices.map((notice) => ({
+      params: { slug: notice.slug },
+      props: { notice },
+    })),
+  ];
+};
+
+const { service, notice } = Astro.props;
+const prose = notice ? extractProseArticle(notice.html, notice.slug) : "";
+---
+
+{service ? (
+  <ServicePage service={service} />
+) : (
+  <BaseLayout
+    title={notice.title}
+    description={notice.description}
+    canonicalPath={`/${notice.slug}/`}
+    currentPath={`${import.meta.env.BASE_URL}${notice.slug}/`}
+  >
+    <main id="main" class="page">
+      <div class="wrap"><article class="prose" set:html={prose} /></div>
+    </main>
+  </BaseLayout>
+)}

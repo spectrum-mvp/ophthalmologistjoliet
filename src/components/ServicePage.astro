@@ -1,0 +1,200 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import type { Service } from "../data/services";
+import { decodeHtmlEntities } from "../utils/html";
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const scheduleUrl = "https://s.odoro.com/mvp/?platform=spectrum";
+const hasBands = service.sections.some((section) => section.type === "cards" || section.type === "checklist");
+const note = service.sections.find((section) => section.type === "note");
+const prose = service.sections.filter((section) => section.type === "prose");
+const bands = service.sections.filter((section) => section.type === "cards" || section.type === "checklist");
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: service.faq.map((item) => ({
+    "@type": "Question",
+    name: decodeHtmlEntities(item.q),
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: decodeHtmlEntities(item.a.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()),
+    },
+  })),
+};
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: decodeHtmlEntities(service.h1),
+  url: `https://www.ophthalmologistjoliet.com/${service.slug}/`,
+  about: {
+    "@type": service.condition ? "MedicalCondition" : "MedicalProcedure",
+    name: decodeHtmlEntities(service.h1),
+  },
+  publisher: {
+    "@type": "MedicalOrganization",
+    name: "Spectrum Eye Institute",
+    url: "https://www.ophthalmologistjoliet.com/",
+    telephone: "+18157293777",
+  },
+};
+const isPromoCurrent = (expires: string | undefined) => {
+  if (!expires) return true;
+  const date = expires.match(/[A-Z][a-z]+ \d{1,2}, \d{4}/)?.[0];
+  if (!date) throw new Error(`Unrecognized promotion expiry for ${service.slug}: ${expires}`);
+  return new Date(`${date} 23:59:59 -0600`).getTime() >= Date.now();
+};
+const promoIsCurrent = service.promo && isPromoCurrent(service.promo.expires);
+---
+
+<BaseLayout
+  title={service.title}
+  description={service.description}
+  canonicalPath={`/${service.slug}/`}
+  jsonLd={[pageSchema, faqSchema]}
+>
+  <main id="main">
+    <section class="svc-hero">
+      <div class="wrap">
+        <div class="svc-hero-copy">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href={base}>Home</a><span aria-hidden="true">/</span><span aria-current="page" set:html={service.navLabel} />
+          </nav>
+          <h1 set:html={service.h1} />
+          <p class="lede" set:html={service.lede} />
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+            <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+          </div>
+        </div>
+        {service.image && (
+          <figure class="svc-figure">
+            <img
+              src={`${base}assets/services/${service.image.file}`}
+              alt={decodeHtmlEntities(service.image.alt)}
+              width="976"
+              height="650"
+            />
+            <figcaption set:html={service.image.caption} />
+          </figure>
+        )}
+      </div>
+    </section>
+
+    {promoIsCurrent && service.promo && (
+      <section class="svc-promo" aria-labelledby="promo-title">
+        <div class="wrap">
+          <img
+            class="svc-promo-art"
+            src={`${base}assets/services/${service.promo.image}`}
+            alt={decodeHtmlEntities(service.promo.alt)}
+            width="640"
+            height="426"
+            loading="lazy"
+          />
+          <div class="svc-promo-copy">
+            <p class="svc-promo-eyebrow">{service.promo.eyebrow}</p>
+            <h2 id="promo-title" set:html={service.promo.headline} />
+            <p class="svc-promo-body" set:html={service.promo.body} />
+            <p class="svc-promo-expires">{service.promo.expires}</p>
+            <a class="btn btn-primary" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+            <p class="svc-promo-terms" set:html={service.promo.terms} />
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section svc-body" aria-labelledby="about-title">
+      <div class="wrap svc-split">
+        <div class="svc-main">
+          {prose.map((section, index) => (
+            <>
+              <h2 id={index === 0 ? "about-title" : undefined} set:html={section.heading} />
+              {section.paragraphs.map((paragraph) => <p set:html={paragraph} />)}
+            </>
+          ))}
+          {!hasBands && note && <p class="svc-note" set:html={note.html} />}
+        </div>
+        <aside class="svc-aside" aria-label="At a glance">
+          <h2 class="svc-aside-title">At a glance</h2>
+          <dl class="svc-facts">
+            {service.atAGlance.map((fact) => (
+              <>
+                <dt set:html={fact.label} />
+                <dd set:html={fact.value} />
+              </>
+            ))}
+          </dl>
+          <a class="btn btn-primary" href={scheduleUrl} target="_blank" rel="noopener">Schedule an Evaluation</a>
+        </aside>
+      </div>
+    </section>
+
+    {bands.map((section, index) => (
+      <section
+        class:list={["section", section.type === "cards" ? "svc-lenses" : "svc-listing"]}
+        aria-labelledby={`band-${index}-title`}
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id={`band-${index}-title`} set:html={section.heading} />
+            {section.type === "cards" && section.note && <p class="section-note" set:html={section.note} />}
+          </div>
+          {section.type === "cards" ? (
+            <div class="svc-grid">
+              {section.cards.map((card) => (
+                <article class="svc-card">
+                  <h3 set:html={card.name} />
+                  <p class="svc-tag" set:html={card.tag} />
+                  <p set:html={card.body} />
+                </article>
+              ))}
+            </div>
+          ) : (
+            <>
+              <p class="svc-list-intro" set:html={section.intro} />
+              <ul class="svc-checklist">
+                {section.items.map((item) => <li set:html={item} />)}
+              </ul>
+            </>
+          )}
+        </div>
+      </section>
+    ))}
+
+    {hasBands && note && (
+      <section class="section svc-notes">
+        <div class="wrap"><p class="svc-note" set:html={note.html} /></div>
+      </section>
+    )}
+
+    <section class="svc-cta">
+      <div class="wrap">
+        <h2 set:html={service.cta.heading} />
+        <p set:html={service.cta.body} />
+        <div class="cta-row">
+          <a class="btn btn-light btn-lg" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+          <a class="btn btn-ghost btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section svc-faq-section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title">Common questions</h2>
+        <div class="faq-list">
+          {service.faq.map((item) => (
+            <details class="faq">
+              <summary><span set:html={item.q} /></summary>
+              <div class="faq-body" set:html={item.a} />
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,58 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const services = [
+  { slug: "cataract-surgery", label: "Cataract Surgery" },
+  { slug: "lasik", label: "LASIK" },
+  { slug: "glaucoma", label: "Glaucoma" },
+  { slug: "diabetic-retinopathy", label: "Diabetic Retinopathy" },
+  { slug: "corneal-transplant", label: "Corneal Transplant" },
+  { slug: "comprehensive-eye-care", label: "Comprehensive Eye Care" },
+  { slug: "retina-conditions", label: "Retina Conditions" },
+];
+const scheduleUrl = "https://s.odoro.com/mvp/?platform=spectrum";
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href={base}>
+      <img src={`${base}assets/spectrum-logo.png`} alt="Spectrum Eye Institute home" width="1000" height="470" />
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-item has-menu">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="services-menu">
+          Services
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7" /></svg>
+        </button>
+        <ul class="nav-menu" id="services-menu" hidden>
+          {services.map(({ slug, label }) => (
+            <li>
+              <a href={`${base}${slug}/`} aria-current={currentPath === `${base}${slug}/` ? "page" : undefined}>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a class="nav-link" href={`${base}doctors/`} aria-current={currentPath === `${base}doctors/` ? "page" : undefined}>Our Doctors</a>
+      <a class="nav-link" href={`${base}patient-info/`} aria-current={currentPath === `${base}patient-info/` ? "page" : undefined}>Patient Info</a>
+      <a class="nav-link" href={`${base}contact/`} aria-current={currentPath === `${base}contact/` ? "page" : undefined}>Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+18157293777" aria-label="Call Spectrum Eye Institute at (815) 729-3777">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" /></svg>
+        <span class="full">(815) 729-3777</span><span class="short">Call</span>
+      </a>
+      <a class="btn btn-primary" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+      <button type="button" class="nav-burger" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="band" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>

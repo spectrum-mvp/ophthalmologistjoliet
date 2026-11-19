@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LocationCard from "../../components/LocationCard.astro";
+import locations from "../../data/locations.json";
+
+const description = "Contact Spectrum Eye Institute in New Lenox and Joliet, IL. Addresses, phone numbers and directions for both offices. Call (815) 729-3777.";
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  name: "Spectrum Eye Institute",
+  url: "https://www.ophthalmologistjoliet.com/",
+  telephone: "+18157293777",
+  sameAs: ["https://www.facebook.com/spec.eye.institute"],
+  location: locations.map((location) => ({
+    "@type": "MedicalClinic",
+    name: `Spectrum Eye Institute – ${location.name}`,
+    telephone: location.tel,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: location.street,
+      addressLocality: location.cityStateZip.split(",")[0],
+      addressRegion: "IL",
+      postalCode: location.cityStateZip.match(/\d{5}/)?.[0],
+      addressCountry: "US",
+    },
+  })),
+};
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Contact Us | Spectrum Eye Institute"
+  description={description}
+  canonicalPath="/contact/"
+  currentPath={`${base}contact/`}
+  jsonLd={[organization]}
+>
+  <main id="main" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="head-copy">
+          <h1>Contact us</h1>
+          <p class="section-note">Hours vary by office &mdash; please call before your visit to confirm.</p>
+        </div>
+      </div>
+      <div class="locations">
+        {locations.map((location) => <LocationCard location={location} />)}
+      </div>
+    </div>
+  </main>
+
+  <section class="section contact-form-band" aria-labelledby="contact-form-title">
+    <div class="wrap">
+      <div class="contact-form-copy">
+        <p class="eyebrow">Send us a message</p>
+        <h2 id="contact-form-title">Have a question?</h2>
+        <p>Fill out the form and a member of our team will get back to you during office hours.</p>
+        <p>To book a visit, call <a href="tel:+18157293777">(815) 729-3777</a> or <a href="https://s.odoro.com/mvp/?platform=spectrum" target="_blank" rel="noopener">schedule an appointment online</a>.</p>
+        <p class="small">For an urgent eye problem, please call the office rather than using this form.</p>
+      </div>
+      <div class="contact-form-card">
+        <script src="https://js.hsforms.net/forms/embed/50073454.js" defer></script>
+        <div class="hs-form-frame" data-region="na1" data-form-id="49f943db-9250-414f-87af-4e96897aed4d" data-portal-id="50073454"></div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

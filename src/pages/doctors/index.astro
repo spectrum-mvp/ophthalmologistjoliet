@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { doctors } from "../../data/doctors";
+
+const description = "Meet the ophthalmologists and optometrists of Spectrum Eye Institute, serving New Lenox and Joliet, IL.";
+const doctorSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "@id": "https://www.ophthalmologistjoliet.com/#org",
+  name: "Spectrum Eye Institute",
+  url: "https://www.ophthalmologistjoliet.com/",
+  telephone: "+18157293777",
+  employee: doctors.map((doctor) => ({
+    "@type": "Physician",
+    name: doctor.name,
+    medicalSpecialty: doctor.field,
+    image: `https://www.ophthalmologistjoliet.com/assets/doctors/${doctor.photo}`,
+  })),
+};
+const base = import.meta.env.BASE_URL;
+const scheduleUrl = "https://s.odoro.com/mvp/?platform=spectrum";
+---
+
+<BaseLayout
+  title="Our Doctors | Spectrum Eye Institute"
+  description={description}
+  canonicalPath="/doctors/"
+  currentPath={`${base}doctors/`}
+  jsonLd={[doctorSchema]}
+>
+  <main id="main" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="head-copy">
+          <h1>Our doctors</h1>
+          <p class="section-note">Our team has a combination of over 100 years of experience caring for patients across Will, Grundy and Cook Counties.</p>
+        </div>
+      </div>
+      <div class="doc-grid">
+        {doctors.map((doctor) => (
+          <article class="doc-card">
+            <img
+              class="doc-photo"
+              src={`${base}assets/doctors/${doctor.photo}`}
+              alt={doctor.name}
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="doc-body">
+              <h2 class="doc-name">{doctor.name}</h2>
+              <p class="doc-role" set:html={`${doctor.role} &middot; ${doctor.field}`} />
+              <p class="doc-blurb" set:html={doctor.blurb} />
+              <button class="btn btn-outline doc-open" type="button" data-bio={`bio-${doctor.slug}`}>
+                View Full Bio<span class="visually-hidden"> for {doctor.name}</span>
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    {doctors.map((doctor) => (
+      <dialog class="doc-modal" id={`bio-${doctor.slug}`} aria-labelledby={`bio-${doctor.slug}-title`}>
+        <div class="doc-modal-inner">
+          <button class="doc-close" type="button" aria-label="Close biography" data-close>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          </button>
+          <div class="doc-modal-head">
+            <img src={`${base}assets/doctors/${doctor.photo}`} alt="" width="600" height="600" loading="lazy" decoding="async" />
+            <div>
+              <h3 class="doc-modal-name" id={`bio-${doctor.slug}-title`}>{doctor.name}</h3>
+              <p class="doc-role" set:html={`${doctor.role} &middot; ${doctor.field}`} />
+            </div>
+          </div>
+          <div class="doc-modal-body">
+            {doctor.quote && <p class="doc-quote" set:html={doctor.quote} />}
+            {doctor.bio.map((paragraph) => <p set:html={paragraph} />)}
+            {doctor.lists?.map(([heading, entries]) => (
+              <>
+                <h4 class="doc-sub" set:html={heading} />
+                <ul class="doc-list">
+                  {entries.map((entry) => <li set:html={entry} />)}
+                </ul>
+              </>
+            ))}
+            {doctor.bio_after?.map((paragraph) => <p set:html={paragraph} />)}
+          </div>
+          <div class="doc-modal-foot">
+            <a class="btn btn-primary" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+            <a class="btn btn-outline" href="tel:+18157293777">Call (815) 729-3777</a>
+          </div>
+        </div>
+      </dialog>
+    ))}
+  </main>
+  <script src={`${base}assets/doctors.js`} defer></script>
+  <noscript>
+    <style>
+      .doc-open { display: none; }
+      .doc-modal { display: block; position: static; width: auto; max-width: none; margin: 0 0 24px; border: 1px solid #dfe4f1; background: #fff; }
+      .doc-close { display: none; }
+    </style>
+  </noscript>
+</BaseLayout>

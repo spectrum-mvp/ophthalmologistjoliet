@@ -1,0 +1,37 @@
+---
+const base = import.meta.env.BASE_URL;
+const scheduleUrl = "https://s.odoro.com/mvp/?platform=spectrum";
+const legalLinks = [
+  { href: "no-surprise-billing-act/", label: "No Surprise Billing Act" },
+  { href: "notice-of-nondiscrimination/", label: "Notice of Nondiscrimination" },
+  { href: "notice-of-availability/", label: "Notice of Availability" },
+  { href: "privacy-policy/", label: "Privacy Policy" },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src={`${base}assets/spectrum-logo-white.png`} alt="Spectrum Eye Institute" width="1000" height="470" loading="lazy" />
+        <p>A Midwest Vision Partners practice</p>
+      </div>
+      <div class="footer-actions">
+        <a class="btn btn-light" href={scheduleUrl} target="_blank" rel="noopener">Schedule Appointment</a>
+        <a class="btn btn-ghost" href="tel:+18157293777">Call (815) 729-3777</a>
+        <a class="social" href="https://www.facebook.com/spec.eye.institute" aria-label="Spectrum Eye Institute on Facebook" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-bottom">
+      <nav class="legal-nav" aria-label="Legal notices">
+        <a href={base}>Home</a>
+        <a href={`${base}patient-info/`}>Patient Info</a>
+        {legalLinks.map(({ href, label }) => <a href={`${base}${href}`}>{label}</a>)}
+      </nav>
+      <div class="copyright">&copy; {new Date().getFullYear()} Spectrum Eye Institute</div>
+    </div>
+  </div>
+</footer>

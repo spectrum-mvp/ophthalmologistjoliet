@@ -1,0 +1,37 @@
+---
+import { decodeHtmlEntities } from "../utils/html";
+
+interface Props {
+  location: {
+    name: string;
+    street: string;
+    cityStateZip: string;
+    tel: string;
+    telDisplay: string;
+    directionsUrl: string;
+    mapEmbedUrl: string;
+  };
+}
+
+const { location } = Astro.props;
+const directionsUrl = decodeHtmlEntities(location.directionsUrl);
+const mapEmbedUrl = decodeHtmlEntities(location.mapEmbedUrl);
+---
+
+<article class="location">
+  <div class="location-body">
+    <h3>{location.name}</h3>
+    <address set:html={`${location.street}<br>${location.cityStateZip}`} />
+    <a class="tel" href={`tel:${location.tel}`}>{location.telDisplay}</a>
+    <a class="directions" href={directionsUrl} target="_blank" rel="noopener">Get Directions &rarr;</a>
+  </div>
+  <div class="map">
+    <iframe
+      src={mapEmbedUrl}
+      title={`Map of Spectrum Eye Institute, ${location.name} office`}
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen
+    ></iframe>
+  </div>
+</article>

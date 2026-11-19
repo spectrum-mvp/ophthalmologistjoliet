@@ -1,0 +1,63 @@
+{
+  "whatToExpect": [
+    "Arrive 15 minutes before your appointment time",
+    "Bring your completed forms and your insurance cards",
+    "Bring a list of any medications you are currently taking",
+    "Expect that your eyes may be dilated during your visit",
+    "If your insurance requires a referral from your primary care physician, bring it with you"
+  ],
+  "goodToKnow": [
+    {
+      "name": "Bringing someone with you",
+      "tag": "Always welcome",
+      "body": "You are welcome to bring a friend or family member. An extra set of ears helps you remember everything your doctor goes over with you."
+    },
+    {
+      "name": "When to make an appointment",
+      "tag": "Don&rsquo;t wait on changes",
+      "body": "Schedule a visit if you have eye discomfort or trouble with your vision. Health conditions such as high blood pressure or diabetes also raise your risk for certain eye diseases."
+    },
+    {
+      "name": "How often to come in",
+      "tag": "Follow-up visits",
+      "body": "If you have a history of eye disease, keep regular appointments and follow up as your ophthalmologist advises."
+    },
+    {
+      "name": "Protecting your eyes",
+      "tag": "Everyday habits",
+      "body": "Wear protective eyewear for yard work, construction and sports. If you wear contacts, wash your hands before handling them and replace them as directed to prevent infections."
+    }
+  ],
+  "forms": [
+    {
+      "name": "Patient Form",
+      "type": "PDF",
+      "file": "spectrum-patient-form.pdf"
+    },
+    {
+      "name": "Our Practice Policies",
+      "type": "PDF",
+      "file": "spectrum-practice-policies.pdf"
+    },
+    {
+      "name": "Lifestyle Questionnaire",
+      "type": "PDF",
+      "file": "spectrum-lifestyle-questionnaire.pdf"
+    },
+    {
+      "name": "Authorization Form",
+      "type": "PDF",
+      "file": "spectrum-form-authorization.pdf"
+    },
+    {
+      "name": "Our Optical Policies",
+      "type": "PDF",
+      "file": "spectrum-optical-policies.pdf"
+    },
+    {
+      "name": "HIPAA Omnibus Privacy Practices",
+      "type": "DOC",
+      "file": "spectrum-form-hipaa-omnibus-notice-privacy-practice.doc"
+    }
+  ]
+}

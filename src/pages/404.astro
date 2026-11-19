@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page not found | Spectrum Eye Institute"
+  description="This page isn’t available right now."
+  canonicalPath="/404/"
+  robots="noindex"
+>
+  <main id="main" class="page">
+    <div class="wrap">
+      <article class="prose">
+        <a class="back" href={import.meta.env.BASE_URL}>← Back to Home</a>
+        <h1>Page not found</h1>
+        <p>Our website is being rebuilt, so the page you’re looking for isn’t available right now. We’re still open and seeing patients.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="https://s.odoro.com/mvp/?platform=spectrum" target="_blank" rel="noopener">Schedule Appointment</a>
+          <a class="btn btn-outline btn-lg" href="tel:+18157293777">Call (815) 729-3777</a>
+        </div>
+      </article>
+    </div>
+  </main>
+</BaseLayout>
